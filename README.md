@@ -57,6 +57,28 @@ The purpose of the website is to provide visitors with an easy and engaging way 
   * Developing wireframes for the main websites.
   * Establishing the colour scheme, typography and overall design concept.
   * planning the website's key functionality and user experience.
-  * Identifying the actual technical requirements for the website.  
+  * Identifying the actual technical requirements for the website.
+ 
+  # Reference List:
+  * LOGO: Canva by Laicah Banda <https://www.canva.com/design/DAHT3PhaSXw/N-8YfxvKykVXT3y5yWAWxw/edit> [Accessed 26 August2026]
+  * Coffee menu: Canva by Laicah BAnda <https://www.canva.com/design/DAHT7ir5R4k/3t1w2NdKdLf6u3Q19sms-g/edit>[Accessed 13 August 2026]
+  * DARG Shop list: Canva by Laicah Banda <https://www.canva.com/design/DAHT70O-kxQ/3zrCs-gf7TXu-QkJNyQTog/edit> [Accessed 26 August 2026]
+  * The Woof World, 2023. Golden Play Mode On[online image]. Available at<https://za.pinterest.com/pin/14073817580946118/>[Accessed 30 August 2026].
+  * Lauren, 2025. Dogs & Puppies for Adoption Near Your Petfinder. [online image] Available at <https://za.pinterest.com/search/pins/?q=dog%20adopt&rs=rs&source_id=rs_vtILbqoq&top_pin_ids=92253492362888443&eq=&etslf=1711>
+  * Kristina London, 2026. Golden retriver German shepherd mixx breed. [online image] available at<https://za.pinterest.com/search/pins/?q=dog%20adopt&rs=rs&source_id=rs_vtILbqoq&top_pin_ids=92253492362888443&eq=&etslf=1711>
+  * Maricel, 2026. Gogs[online image] availabe at <https://za.pinterest.com/search/pins/?q=dog%20adopt&rs=rs&source_id=rs_vtILbqoq&top_pin_ids=92253492362888443&eq=&etslf=1711>
+  * Jen Hardin, Dogs & Puppies for Adoption Near Your Petfinder [online image]. Available <https://za.pinterest.com/search/pins/?q=dog%20adopt&rs=rs&source_id=rs_vtILbqoq&top_pin_ids=92253492362888443&eq=&etslf=1711>
+  * Petfinder, 2026.[online image]. Available at<https://za.pinterest.com/search/pins/?q=dog%20adopt&rs=rs&source_id=rs_vtILbqoq&top_pin_ids=92253492362888443&eq=&etslf=1711>
+  * Terry Gorman, 2026[online image]. available at<https://za.pinterest.com/search/pins/?q=dog%20adopt&rs=rs&source_id=rs_vtILbqoq&top_pin_ids=92253492362888443&eq=&etslf=1711>
+  * Bonnie, 2026,[online image] available at<https://za.pinterest.com/search/pins/?q=cats%20adopt&rs=rs&source_id=rs_m5ui4Xiy&top_pin_ids=127789708167030399&eq=&etslf=1815>
+  * Akari, 2026[online images] available at<https://za.pinterest.com/search/pins/?q=cats%20adopt&rs=rs&source_id=rs_m5ui4Xiy&top_pin_ids=127789708167030399&eq=&etslf=1815>
+  * Emy, 2026[online image] available at <https://za.pinterest.com/search/pins/?q=cats%20adopt&rs=rs&source_id=rs_m5ui4Xiy&top_pin_ids=127789708167030399&eq=&etslf=1815>
+  * Kan, 2026[online image] available at<https://za.pinterest.com/search/pins/?q=cats%20adopt&rs=rs&source_id=rs_m5ui4Xiy&top_pin_ids=127789708167030399&eq=&etslf=1815>
+  * Larsia, 2026[online image] available at <https://za.pinterest.com/search/pins/?q=cats%20adopt&rs=rs&source_id=rs_m5ui4Xiy&top_pin_ids=127789708167030399&eq=&etslf=1815>
+  * Lori Hum, 2026 [online image] available at <https://za.pinterest.com/search/pins/?q=cats%20adopt&rs=rs&source_id=rs_m5ui4Xiy&top_pin_ids=127789708167030399&eq=&etslf=1815>
+
+# Github Link:
+
+  
  
          
