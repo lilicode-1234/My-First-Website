@@ -1,7 +1,7 @@
 # Domestic Animal Resue Group (DARG)
 # ST10493996
 Laicah Banda 
-#Project Overview:
+# Project Overview:
 The DARG website is a responsive website designed for the Domestic Animal Rescue Group(DARG), an organisation dedicated to rescuing, caring for, and rehoming abandoned and neglected animals.
 The purpose of the website is to provide visitors with an easy and engaging way to learn anou DARG, view animals available for adoption, support the organisation, shop, and find important contact and location information.
 
@@ -36,7 +36,7 @@ The purpose of the website is to provide visitors with an easy and engaging way 
   * Phase 5- Test the website across different screen sizes,check links and forms, identify errors and make improvements.
   * Phase 6- Complete the content, refine the design, preform final testing and prepare the README and project submission.
  
-  #Key Milestone:
+  # Key Milestone:
   * Reaseach and planning completed 
   * Sitemape and wireframe completed
   * Website design established
