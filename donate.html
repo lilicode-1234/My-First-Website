@@ -10,6 +10,8 @@
 <!-- Link to the CSS file -->
     <link rel="stylesheet" href="style.css">    
 </head>
+<!--Headet-->
+
 <body>
 
     <img src="images/LOGO.jpg" alt="Logo" width="150">
@@ -28,31 +30,62 @@
         </ul>
     </nav>
 
-    <h1>SUPPORT DARG</h1>
-
-    <p>Your support helps DARG rescue, care and protect animals in need. Every contribution makes a difference.</p>
+    <!--Donate Section-->
+    <section class="donate">
+        <h1>SUPPORT DARG</h1>
+        <p>
+            Your support helps DARG, acre and protect animals innedd.
+            Enjoy contribution makes a difference.
+        </p>
+    
 
     <!-- Donation Form -->
-    <form>
-        <label for="Donor-name">Donor Name:</label>
-        <input type="text" id="Donor-name" name="Donor-name" required><br><br>
+<form>
+    <label for="Donor-name">Donor Name:</label>
+    <input type="text" id="Donor-name" name="Donor-name" required>
 
-        <label for="Donor-email">Donor Email:</label>   
-        <input type="email" id="Donor-email" name="Donor-email" required><br><br>
+    <label for="Donor-email">Donor Email:</label>
+    <input type="email" id="Donor-email" name="Donor-email" required>
 
-        <label for="Donation-amount">Donation Amount:</label>
-        <input type="number" id="Donation-amount" name="Donation-amount" required><br><br>  
-        
-        <label for="Donation-message">Donation Message:</label>
-        <textarea id="Donation-message" name="Donation-message"></textarea><br><br>
+    <label for="Donation-amount">Donation Amount (R):</label>
+    <input type="number" id="Donation-amount" name="Donation-amount" min="1" required>
 
-        <button type="submit">Donate</button>
-    </form>
+    <label for="payment-method">Payment Method:</label>
+    <select id="payment-method" name="payment-method" required>
+        <option value="">Select payment method</option>
+        <option value="card">Credit/Debit Card</option>
+        <option value="eft">EFT</option>
+    </select>
 
+    <!-- Card Payment Details -->
+<div class="card-details">
 
-    <footer>
-        <p>&copy; 2026 Domestic Animal Rescue Group. All rights reserved.</p>   
+    <h3>Card Details</h3>
 
-    </footer>
-</body>
+    <label for="card-name">Cardholder Name:</label>
+    <input type="text" id="card-name" name="card-name" placeholder="Name on card">
+
+    <label for="card-number">Card Number:</label>
+    <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456">
+
+    <label for="expiry-date">Expiry Date:</label>
+    <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY">
+
+    <label for="cvv">CVV:</label>
+    <input type="text" id="cvv" name="cvv" placeholder="123">
+
+</div>
+
+    <label for="Donation-message">Donation Message:</label>
+    <textarea id="Donation-message" name="Donation-message"></textarea>
+
+    <button type="submit">Donate Now</button>
+</form>
+</section>
+
+<!--Fotter-->
+<footer>
+    <p>&copy; 2026 Domestic Animal Rescue Group. All rights reserverd.</p>
+</footer>
+</body> 
 </html>
