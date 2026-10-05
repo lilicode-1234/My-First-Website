@@ -58,6 +58,68 @@ The purpose of the website is to provide visitors with an easy and engaging way 
   * Establishing the colour scheme, typography and overall design concept.
   * planning the website's key functionality and user experience.
   * Identifying the actual technical requirements for the website.
+
+# PART 2 Details
+
+Part 2 focuses on the development, implementation and testing of the DARG website. The purpose of this stage was to take the research, planning and design completed in Part 1 and turn it into a functional website. This stage involved developing the website pages, applying the planned design, adding functionality and making sure that the website is responsive and easy for users to navigate.
+
+The main activities completed in Part 2 include:
+
+* Developing the DARG website using HTML and CSS.
+* Creating and linking the website pages according to the sitemap and navigation structure created in Part 1.
+* Creating and using an external CSS stylesheet to control the appearance of the website.
+* Applying the planned colour scheme, typography, layout and visual design to the website.
+* Adding and formatting text, images, buttons, forms and other website content.
+* Implementing the website navigation and linking the different pages together.
+* Developing the required website functionality, including adoption, donation, volunteering, shop, coffee shop, contact and location sections.
+* Applying responsive web design techniques so that the website can be viewed on different screen sizes.
+* Using responsive breakpoints and media queries to adjust the website layout for smaller screens.
+* Using flexible sizing and responsive images to improve the website's mobile layout.
+* Testing the website to identify navigation, layout, styling and functionality problems.
+* Making corrections and improvements based on testing and feedback.
+* Checking the website on different screen sizes to ensure that the content remains readable and usable.
+* Recording the development process and documenting the changes and improvements made during website development.
+
+  # DARG WEBSITE CHANGELOG
+
+## Part 1 – Research, Planning and Design
+
+* Researched DARG and its purpose as an animal rescue organisation.
+* Identified the target audience and their needs.
+* Defined the goals and objectives of the DARG website.
+* Created the website sitemap and navigation structure.
+* Developed wireframes for the main website pages.
+* Established the colour scheme for the website.
+* Selected the typography and overall design style.
+* Planned the website's key functionality.
+* Planned the user experience and how users would interact with the website.
+* Identified the technical requirements needed to develop the website.
+
+## Part 2 – Website Development and Implementation
+
+* Started developing the DARG website using HTML.
+* Created the main website pages based on the sitemap from Part 1.
+* Added navigation links between the website pages.
+* Created and linked an external CSS stylesheet.
+* Applied the planned colours, typography and overall design.
+* Added headings, paragraphs, images, buttons and other website content.
+* Created the animal adoption sections for cats and dogs.
+* Added the Volunteer page and volunteer form.
+* Added the Donate page and donation form.
+* Added the Online Shop and Coffee Shop sections.
+* Added the Contact page with contact information.
+* Added the Find Us page and location map.
+* Added responsive design using CSS media queries.
+* Adjusted the navigation and page layout for smaller screens.
+* Added responsive images so images could adapt to different screen sizes.
+* Tested the website's navigation, links, images, forms and buttons.
+* Identified and fixed layout and styling problems during testing.
+* Fixed duplicate buttons and other issues found during development.
+* Improved the footer and other website sections.
+* Made final responsive design adjustments.
+* Completed final testing of the website.
+* Made final corrections and improvements before submission
+  
  
   # Reference List:
   * LOGO: Canva by Laicah Banda <https://www.canva.com/design/DAHT3PhaSXw/N-8YfxvKykVXT3y5yWAWxw/edit> [Accessed 26 August2026]
@@ -75,7 +137,12 @@ The purpose of the website is to provide visitors with an easy and engaging way 
   * Emy, 2026[online image] available at <https://za.pinterest.com/search/pins/?q=cats%20adopt&rs=rs&source_id=rs_m5ui4Xiy&top_pin_ids=127789708167030399&eq=&etslf=1815>
   * Kan, 2026[online image] available at<https://za.pinterest.com/search/pins/?q=cats%20adopt&rs=rs&source_id=rs_m5ui4Xiy&top_pin_ids=127789708167030399&eq=&etslf=1815>
   * Larsia, 2026[online image] available at <https://za.pinterest.com/search/pins/?q=cats%20adopt&rs=rs&source_id=rs_m5ui4Xiy&top_pin_ids=127789708167030399&eq=&etslf=1815>
-  * Lori Hum, 2026 [online image] available at <https://za.pinterest.com/search/pins/?q=cats%20adopt&rs=rs&source_id=rs_m5ui4Xiy&top_pin_ids=127789708167030399&eq=&etslf=1815>
+  * Lori Hum, 2026 [online image] available at <https://za.pinterest.com/search/pins/?q=cats%20adopt&rs=rs&source_id=rs_m5ui4Xiy&top_pin_ids=127789708167030399&eq=&etslf=1815
+
+  * W3Schools. (2026). *HTML Responsive Web Design*. Available at: https://www.w3schools.com/html/html_responsive.asp (Accessed: 1 October 2026).
+  * W3Schools. (2026). *CSS Responsive Web Design – Media Queries*. Available at: https://www.w3schools.com/css/css_rwd_mediaqueries.asp (Accessed: 25 September 2026).
+  * W3Schools. (2026). *CSS Responsive Web Design*. Available at: https://www.w3schools.com/css/css_rwd_intro.asp (Accessed: 1 October 2026).
+
 
 # Github Link:
 https://github.com/lilicode-1234/My-First-Website/blob/main/README.md
