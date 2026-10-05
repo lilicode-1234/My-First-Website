@@ -103,8 +103,10 @@ h2 {
 
 /*styling for animal cards*/
 .card {
+    background-color: white;
     border:1px solid #000000;
     padding: 15px;
+    margin: 15px;
     text-align: ceneter;
 }
 
@@ -112,5 +114,18 @@ h2 {
 .card img {
     width: 250px;
     height: 200px;
-    object-fit: cover;
+    object-fit: contain;
+}
+
+/*volunteer section */
+.volunteer {
+    padding: 30px;
+    text-align: center;
+
+}
+
+/*styling for form*/
+form {
+    width: 80%
+    
 }
