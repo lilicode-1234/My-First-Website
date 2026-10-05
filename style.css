@@ -1,0 +1,116 @@
+
+/* CSS file for My First Website */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* styling header*/
+header { 
+    background-color: #000000;
+    padding: 10px;
+    text-align:  center;
+
+}
+
+/*styling for navigation bar*/
+nav {
+    background-color: #000000;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+
+}
+
+/*styling for hero section*/
+hero {
+    background-color: #1e88e5;
+    color: white;
+    text-align:center;
+    padding: 60px 20px;
+
+}
+hero h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+hero p {
+    font-size: 18px;
+}
+
+/*styling for images*/
+img {
+    max-width: 100%;
+    height:auto;
+    display: block;
+    margin: auto;
+}
+
+/* styling for heading 1*/
+h1 {
+    text-align: ceneter;
+    color: #1e88e5;
+    font-size: 36px;
+}
+
+/*styling for paragraphs*/
+p {
+    text-align: center;
+    font-size: 16px;
+    color: #000000;
+
+}
+
+/*styling for buttons*/
+button { 
+    background-color: #f4c20d;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+
+}
+
+/*Links*/
+a { 
+    text-decoration: none;
+    
+}
+
+a:hover {
+    text-decoration: underline;
+
+}
+
+/* styling for about us section*/
+about {
+    padding: 30px;
+    text-align: center;
+}
+
+/* styling for heading 2*/
+h2 {
+    text-align: center;
+    color: #1e88e5;
+}
+
+/*styling for animal cards*/
+.card {
+    border:1px solid #000000;
+    padding: 15px;
+    text-align: ceneter;
+}
+
+/*styling for animal pictures*/
+.card img {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+}
