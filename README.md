@@ -138,7 +138,11 @@ The main activities completed in Part 2 include:
   * Kan, 2026[online image] available at<https://za.pinterest.com/search/pins/?q=cats%20adopt&rs=rs&source_id=rs_m5ui4Xiy&top_pin_ids=127789708167030399&eq=&etslf=1815>
   * Larsia, 2026[online image] available at <https://za.pinterest.com/search/pins/?q=cats%20adopt&rs=rs&source_id=rs_m5ui4Xiy&top_pin_ids=127789708167030399&eq=&etslf=1815>
   * Lori Hum, 2026 [online image] available at <https://za.pinterest.com/search/pins/?q=cats%20adopt&rs=rs&source_id=rs_m5ui4Xiy&top_pin_ids=127789708167030399&eq=&etslf=1815
-
+  * Magniffe, 2025[online image] available at <https://za.pinterest.com/pin/16536723627286304/>
+  * Karen Vaisman Photography, 2026[online image] available at <https://za.pinterest.com/pin/16536723627286304/>
+  * Anna Stovall, 2026[online image] available at <https://za.pinterest.com/pin/16536723627286304/>
+  * Cathy Fox, 2026[online image[ available at <https://za.pinterest.com/pin/16536723627286304/>
+  * Sarina Parker, 2024[online image] available at <https://za.pinterest.com/pin/16536723627286304/>
   * W3Schools. (2026). *HTML Responsive Web Design*. Available at: https://www.w3schools.com/html/html_responsive.asp (Accessed: 1 October 2026).
   * W3Schools. (2026). *CSS Responsive Web Design – Media Queries*. Available at: https://www.w3schools.com/css/css_rwd_mediaqueries.asp (Accessed: 25 September 2026).
   * W3Schools. (2026). *CSS Responsive Web Design*. Available at: https://www.w3schools.com/css/css_rwd_intro.asp (Accessed: 1 October 2026).
