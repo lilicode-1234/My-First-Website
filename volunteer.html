@@ -10,51 +10,87 @@
     <link rel="stylesheet" href="style.css">    
     
 </head>
+
 <body>
-   
-    <img src="images/LOGO.jpg" alt="Logo" width="150">
 
-    <nav> 
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="donate.html">Donate</a></li>
-            <li><a href="coffee-shop.html">Coffee Shop</a></li>
-            <li><a href="adopt.html">Adopt</a></li>
-            <li><a href="shop.html">Shop</a></li>
-            <li><a href="volunteer.html">Volunteer</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="find-us.html">Find Us</a></li>
-        </ul>
-    </nav>
+    <!-- Header section -->
+    <header>
+        <img src="images/LOGO.jpg" alt="DARG Logo" width="150">
+  <!-- Navigation menu -->
+        <nav>
+    <!-- Menu button for mobile screens -->
+    <button class="menu-button" onclick="toggleMenu()">
+        ☰
+    </button>
 
-    <h1>Volunteer With DARG</h1>
-    <p>Your time and support can make a meaningful difference in the lives of rescued animals. Join DARG as a colunteer and help us provide care, love and support to animals in need.</p>
+    <!-- Navigation links -->
+    <ul id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="adopt.html">Adopt</a></li>
+        <li><a href="donate.html">Donate</a></li>
+        <li><a href="volunteer.html">Volunteer</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="coffee-shop.html">Coffee Shop</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="find-us.html">Find Us</a></li>
+    </ul>
+</nav>
+    </header>
 
-    <h2>Why Should You Volunteer?</h2>
-    <p>Help provide rescued animals with the care, attention and companionship they need while they wait for their forever homes.</p>
+    <!-- Main content -->
+    <main>
 
+        <!-- Volunteer introduction -->
+        <div class="volunteer-intro">
+            <h1>Volunteer With DARG</h1>
 
-    <h2>Become A Volunteer</h2>
-    <form action="submit_volunteer_form.php" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required><br><br>
+            <p>
+                Your time and support can make a meaningful difference
+                in the lives of rescued animals. Join DARG as a volunteer
+                and help us provide care, love and support to animals in need.
+            </p>
+        </div>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
+        <!-- Why volunteer section -->
+        <section class="why-volunteer">
+            <h2>Why Should You Volunteer?</h2>
 
-        <label for="phone">Phone:</label>
-        <input type="tel" id="phone" name="phone"><br><br>
+            <p>
+                Help provide rescued animals with the care, attention
+                and companionship they need while they wait for
+                their forever homes.
+            </p>
+        </section>
 
-        <label for="availability">Availability:</label>
-        <textarea id="availability" name="availability" rows="4" cols="50"></textarea><br><br>
+        <!-- Volunteer application form -->
+        <section class="volunteer-form">
+            <h2>Become a Volunteer</h2>
 
-        <input type="submit" value="Submit">
-    </form>
+            <form action="submit_volunteer_form.php" method="post">
 
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="availability">Availability:</label>
+                <textarea id="availability" name="availability" rows="4"></textarea>
+
+                <input type="submit" value="Submit">
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer section -->
     <footer>
-        <p>&copy; 2026 DARG - Domestic Animal Rescue Group. All rights reserved.</p>        
-
+        <p>&copy; 2026 DARG - Domestic Animal Rescue Group. All rights reserved.</p>
     </footer>
 
 </body>
