@@ -10,29 +10,60 @@
     
 
 </head>
+
 <body>
-     <img src="images/LOGO.jpg" alt="Logo" width="150">
 
-     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="adopt.html">Adopt</a></li>
-            <li><a href="donate.html">Donate</a></li>
-            <li><a href="volunteer.html">Volunteer</a></li>
-            <li><a href="coffee-shop.html">Coffee</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="find-us.html">Find Us</a></li>
-        </ul>
-     </nav>
-     <h1>Welcome to the DARG Shop</h1>
+    <!-- Header section -->
+    <header>
+        <!-- Website logo -->
+        <img src="images/LOGO.jpg" alt="DARG Logo" width="150">
 
-     <p>Shop DARG merchandise and help support our mission to rescue, care for and protect animals in need.</p>
+       <!-- Navigation menu -->
+        <nav>
+    <!-- Menu button for mobile screens -->
+    <button class="menu-button" onclick="toggleMenu()">
+        ☰
+    </button>
 
-     <img src="images/shop.png" alt="DARG Shop" width="700">
+    <!-- Navigation links -->
+    <ul id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="adopt.html">Adopt</a></li>
+        <li><a href="donate.html">Donate</a></li>
+        <li><a href="volunteer.html">Volunteer</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="coffee-shop.html">Coffee Shop</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="find-us.html">Find Us</a></li>
+    </ul>
+</nav>
+    </header>
 
+    <!-- Main content -->
+    <main>
+
+        <!-- Shop introduction -->
+        <div class="shop-intro">
+            <h1>Welcome to the DARG Shop</h1>
+
+            <p>
+                Shop DARG merchandise and help support our mission
+                to rescue, care for and protect animals in need.
+            </p>
+        </div>
+
+        <!-- Shop image -->
+        <div class="shop-image">
+            <img src="images/shop.png" alt="DARG Shop merchandise" width="700">
+        </div>
+
+    </main>
+
+    <!-- Footer section -->
     <footer>
         <p>&copy; 2026 Domestic Animal Rescue Group. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
