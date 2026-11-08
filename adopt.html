@@ -12,45 +12,97 @@
 </head>
 <body>
 
-    <img src="images/LOGO.jpg" alt="Logo" width="150">
+    <!-- Website header -->
+    <header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="find-us.html">Find Us</a></li>
-            <li><a href="donate.html">Donate</a></li>
-            <li><a href="volunteer.html">Volunteer</a></li>
-            <li><a href="coffee-shop.html">Coffee Shop </a></li>
-            <li><a href="shop.html">Shop</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    <h1>Adopt a Cat or Dog</h1>
+        <!-- Website logo -->
+        <img src="images/LOGO.jpg" alt="DARG Logo" width="150">
 
-    <p>
-        Give a rescued animal a lovinf forever home. At DARG, we have dogs and cats waiting for caring families. Explore our available animals and find your perfect companion.
-    </p>
+        <!-- Navigation bar -->
+       
+  <!-- Navigation menu -->
+        <nav>
+    <!-- Menu button for mobile screens -->
+    <button class="menu-button" onclick="toggleMenu()">
+        ☰
+    </button>
 
-
-   <!-- Section for adopting cats -->
-<section>
-    <h2>Adopt a Cat</h2>
-
-    <p>Discover our adorable cats looking for loving homes. Each cat has its own unique personality and story. Click below to see the cats available for adoption.</p>
-
-    <a href="adopt-cats.html">View Cats</a>
-</section>
+    <!-- Navigation links -->
+    <ul id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="adopt.html">Adopt</a></li>
+        <li><a href="donate.html">Donate</a></li>
+        <li><a href="volunteer.html">Volunteer</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="coffee-shop.html">Coffee Shop</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="find-us.html">Find Us</a></li>
+    </ul>
+</nav>
 
 
-<!-- Section for adopting dogs -->
-<section>
-    <h2>Adopt a Dog</h2>
+    </header>
 
-    <p>Find your new best friend among our loving dogs. Each dog is ready for a forever home and eager to make a difference in your life.</p>
+    <!-- Main content -->
+    <main>
 
-    <a href="adopt-dogs.html">View Dogs</a>
-</section>
-    
+        <!-- Adoption introduction -->
+        <section class="adopt-intro">
+
+            <h1>Adopt a Cat or Dog</h1>
+
+            <p>
+                Give a rescued animal a loving forever home.
+                At DARG, we have dogs and cats waiting for
+                caring families. Explore our available animals
+                and find your perfect companion.
+            </p>
+
+        </section>
+
+        <!-- Cat adoption section -->
+        <section class="adopt-section">
+
+            <h2>Adopt a Cat</h2>
+
+            <p>
+                Discover our adorable cats looking for loving
+                homes. Each cat has its own unique personality
+                and story. Click below to see the cats available
+                for adoption.
+            </p>
+
+            <a href="adopt-cats.html">View Cats</a>
+
+        </section>
+
+        <!-- Dog adoption section -->
+        <section class="adopt-section">
+
+            <h2>Adopt a Dog</h2>
+
+            <p>
+                Find your new best friend among our loving dogs.
+                Each dog is ready for a forever home and eager
+                to make a difference in your life.
+            </p>
+
+            <a href="adopt-dogs.html">View Dogs</a>
+
+        </section>
+
+    </main>
+
+    <!-- Website footer -->
+    <footer>
+
+        <p>
+            &copy; 2026 DARG - Domestic Animal Rescue Group.
+            All rights reserved.
+        </p>
+
+    </footer>
+
 </body>
 </html>
