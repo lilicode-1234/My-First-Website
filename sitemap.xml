@@ -1,0 +1,61 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <!-- Homepage -->
+    <url>
+        <loc>http://127.0.0.1:5500/My-First-Website/index.html/</loc>
+    </url>
+
+    <!-- About Us -->
+    <url>
+        <loc>http://127.0.0.1:5500/My-First-Website/index.html</loc>
+    </url>
+
+    <!-- Adoption -->
+    <url>
+        <loc>https://your-domain.com/adopt.html</loc>
+    </url>
+
+    <!-- Dog Adoption -->
+    <url>
+        <loc>https://your-domain.com/adopt-dogs.html</loc>
+    </url>
+
+    <!-- Cat Adoption -->
+    <url>
+        <loc>https://your-domain.com/adopt-cats.html</loc>
+    </url>
+
+    <!-- Donations -->
+    <url>
+        <loc>https://your-domain.com/donate.html</loc>
+    </url>
+
+    <!-- Volunteering -->
+    <url>
+        <loc>https://your-domain.com/volunteer.html</loc>
+    </url>
+
+    <!-- Shop -->
+    <url>
+        <loc>https://your-domain.com/shop.html</loc>
+    </url>
+
+    <!-- Coffee Shop -->
+    <url>
+        <loc>https://your-domain.com/coffee-shop.html</loc>
+    </url>
+
+    <!-- Contact -->
+    <url>
+        <loc>https://your-domain.com/contact.html</loc>
+    </url>
+
+    <!-- Find Us -->
+    <url>
+        <loc>https://your-domain.com/find-us.html</loc>
+    </url>
+
+</urlset>
