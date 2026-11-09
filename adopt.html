@@ -1,100 +1,324 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Adopt</title>
 
-    <!-- Link to the CSS file -->
-    <link rel="stylesheet" href="style.css">    
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Title -->
+    <title>Adopt a Pet in Hout Bay | DARG</title>
+
+    <!-- SEO Description -->
+    <meta name="description"
+          content="Looking to adopt a pet in Hout Bay? Explore rescued dogs and cats at DARG and discover how you can give an animal a safe and loving home.">
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
 
-    <!-- Website header -->
+    <!-- HEADER -->
     <header>
 
-        <!-- Website logo -->
-        <img src="images/LOGO.jpg" alt="DARG Logo" width="150">
+        <img src="images/LOGO.jpg"
+             alt="DARG Logo"
+             width="150">
 
-        <!-- Navigation bar -->
-       
-  <!-- Navigation menu -->
+        <!-- Navigation Menu -->
         <nav>
-    <!-- Menu button for mobile screens -->
-    <button class="menu-button" onclick="toggleMenu()">
-        ☰
-    </button>
 
-    <!-- Navigation links -->
-    <ul id="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="adopt.html">Adopt</a></li>
-        <li><a href="donate.html">Donate</a></li>
-        <li><a href="volunteer.html">Volunteer</a></li>
-        <li><a href="shop.html">Shop</a></li>
-        <li><a href="coffee-shop.html">Coffee Shop</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="find-us.html">Find Us</a></li>
-    </ul>
-</nav>
+            <button class="menu-button"
+                    onclick="toggleMenu()"
+                    aria-label="Toggle navigation menu">
+                ☰
+            </button>
 
+            <ul id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="adopt.html">Adopt</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="coffee-shop.html">Coffee Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="find-us.html">Find Us</a></li>
+            </ul>
+
+        </nav>
 
     </header>
 
-    <!-- Main content -->
+
+    <!-- MAIN CONTENT -->
     <main>
 
-        <!-- Adoption introduction -->
-        <section class="adopt-intro">
+        <!-- ADOPTION HERO -->
+        <section class="adopt-modern-hero">
 
-            <h1>Adopt a Cat or Dog</h1>
+            <span class="adopt-label">
+                FIND YOUR FOREVER FRIEND
+            </span>
+
+            <h1>
+                Adopt a <span>Rescue Pet</span>
+            </h1>
 
             <p>
-                Give a rescued animal a loving forever home.
-                At DARG, we have dogs and cats waiting for
-                caring families. Explore our available animals
-                and find your perfect companion.
+                Every animal deserves a loving home.
+                Discover the wonderful dogs and cats
+                waiting for their second chance at DARG
+                in Hout Bay.
             </p>
 
         </section>
 
-        <!-- Cat adoption section -->
-        <section class="adopt-section">
 
-            <h2>Adopt a Cat</h2>
+        <!-- CHOOSE DOGS OR CATS -->
+        <section class="adopt-modern-choose">
+
+            <span class="adopt-section-label">
+                START YOUR ADOPTION JOURNEY
+            </span>
+
+            <h2>Choose Your New Best Friend</h2>
 
             <p>
-                Discover our adorable cats looking for loving
-                homes. Each cat has its own unique personality
-                and story. Click below to see the cats available
-                for adoption.
+                Are you looking for a loyal dog
+                or an affectionate cat?
+                Explore our rescue animals below.
             </p>
 
-            <a href="adopt-cats.html">View Cats</a>
+            <div class="adopt-modern-tabs">
+
+                <!-- DOG ADOPTION -->
+                <a href="adopt-dogs.html"
+                   class="adopt-modern-tab">
+
+                    <span class="adopt-tab-icon"></span>
+
+                    <h3>Adopt a Dog</h3>
+
+                    <p>
+                        Meet loving rescue dogs
+                        looking for forever homes.
+                    </p>
+
+                    <span class="adopt-tab-link">
+                        View Dogs →
+                    </span>
+
+                </a>
+
+
+                <!-- CAT ADOPTION -->
+                <a href="adopt-cats.html"
+                   class="adopt-modern-tab">
+
+                    <span class="adopt-tab-icon"></span>
+
+                    <h3>Adopt a Cat</h3>
+
+                    <p>
+                        Discover rescued cats
+                        waiting for loving families.
+                    </p>
+
+                    <span class="adopt-tab-link">
+                        View Cats →
+                    </span>
+
+                </a>
+
+            </div>
 
         </section>
 
-        <!-- Dog adoption section -->
-        <section class="adopt-section">
 
-            <h2>Adopt a Dog</h2>
+        <!-- SEARCH AND FILTER ANIMALS -->
+        <section class="adopt-modern-search">
+
+            <div class="adopt-search-heading">
+
+                <span class="adopt-section-label">
+                    EXPLORE OUR RESCUE ANIMALS
+                </span>
+
+                <h2>Find Your Perfect Companion</h2>
+
+                <p>
+                    Search and filter our rescue
+                    animals to find your ideal pet.
+                </p>
+
+            </div>
+
+
+            <!-- SEARCH CONTROLS -->
+            <div class="animal-controls">
+
+                <!-- Search by animal name -->
+                <div class="adopt-control-group">
+
+                    <label for="searchAnimal">
+                        Search by Name
+                    </label>
+
+                    <input type="text"
+                           id="searchAnimal"
+                           placeholder="Enter animal name...">
+
+                </div>
+
+
+                <!-- Filter by animal type -->
+                <div class="adopt-control-group">
+
+                    <label for="filterType">
+                        Animal Type
+                    </label>
+
+                    <select id="filterType">
+
+                        <option value="all">
+                            All Animals
+                        </option>
+
+                        <option value="dog">
+                            Dogs
+                        </option>
+
+                        <option value="cat">
+                            Cats
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- Filter by gender -->
+                <div class="adopt-control-group">
+
+                    <label for="filterGender">
+                        Gender
+                    </label>
+
+                    <select id="filterGender">
+
+                        <option value="all">
+                            All Genders
+                        </option>
+
+                        <option value="male">
+                            Male
+                        </option>
+
+                        <option value="female">
+                            Female
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- Sort animals -->
+                <div class="adopt-control-group">
+
+                    <label for="sortAnimals">
+                        Sort Animals
+                    </label>
+
+                    <select id="sortAnimals">
+
+                        <option value="az">
+                            Name: A to Z
+                        </option>
+
+                        <option value="za">
+                            Name: Z to A
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- Reset filters -->
+                <div class="adopt-reset-group">
+
+                    <button id="resetAnimals"
+                            type="button">
+                        Reset Filters
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ANIMAL RESULTS -->
+        <section class="adopt-modern-results animal-results">
+
+            <h2>Animals Available for Adoption</h2>
+
+            <!-- JavaScript updates the number of animals -->
+            <p id="animalCount" aria-live="polite"></p>
+
+            <!-- JavaScript displays animal cards here -->
+            <div id="animalContainer"
+                 class="animal-container">
+            </div>
+
+        </section>
+
+
+        <!-- ADOPTION SUPPORT SECTION -->
+        <section class="adopt-modern-support">
+
+            <span class="adopt-section-label">
+                EVERY ADOPTION MATTERS
+            </span>
+
+            <h2>
+                Give an Animal the
+                Loving Home They Deserve.
+            </h2>
 
             <p>
-                Find your new best friend among our loving dogs.
-                Each dog is ready for a forever home and eager
-                to make a difference in your life.
+                Adopting a rescue animal gives
+                them another opportunity to
+                experience love, safety and care.
             </p>
 
-            <a href="adopt-dogs.html">View Dogs</a>
+            <div class="adopt-support-buttons">
+
+                <a href="contact.html"
+                   class="adopt-main-button">
+                    Contact DARG
+                </a>
+
+                <a href="about.html"
+                   class="adopt-outline-button">
+                    Learn About DARG
+                </a>
+
+            </div>
 
         </section>
 
     </main>
 
-    <!-- Website footer -->
+
+    <!-- FOOTER -->
     <footer>
 
         <p>
@@ -103,6 +327,10 @@
         </p>
 
     </footer>
+
+
+    <!-- Existing JavaScript -->
+    <script src="js/script.js"></script>
 
 </body>
 </html>
