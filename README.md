@@ -5,6 +5,9 @@ Laicah Banda
 The DARG website is a responsive website designed for the Domestic Animal Rescue Group(DARG), an organisation dedicated to rescuing, caring for, and rehoming abandoned and neglected animals.
 The purpose of the website is to provide visitors with an easy and engaging way to learn anou DARG, view animals available for adoption, support the organisation, shop, and find important contact and location information.
 
+# Git Link:
+https://github.com/lilicode-1234/My-First-Website/edit/main/README.md
+
 # Project Goals:
 * Provide information about DARG and its animal rescue services.
 * Help users discover animals available for adoption.
@@ -147,9 +150,6 @@ The main activities completed in Part 2 include:
   * W3Schools. (2026). *CSS Responsive Web Design – Media Queries*. Available at: https://www.w3schools.com/css/css_rwd_mediaqueries.asp (Accessed: 25 September 2026).
   * W3Schools. (2026). *CSS Responsive Web Design*. Available at: https://www.w3schools.com/css/css_rwd_intro.asp (Accessed: 1 October 2026).
 
-
-# Github Link:
-https://github.com/lilicode-1234/My-First-Website/edit/main/README.md
 
 
   
