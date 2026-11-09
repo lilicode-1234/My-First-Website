@@ -77,7 +77,7 @@ img {
 
 /* styling for heading 1*/
 h1 {
-    text-align: ceneter;
+    text-align: center;
     color: #1e88e5;
     font-size: 36px;
 }
@@ -129,7 +129,7 @@ h2 {
     border:1px solid #000000;
     padding: 15px;
     margin: 15px;
-    text-align: ceneter;
+    text-align: center;
 }
 
 /*styling for animal pictures*/
@@ -265,7 +265,7 @@ main{
 }
 
 /*Team section*/
-.team div{
+.team-member{
     display: inline-block;
     width: 200px;
     margin: 15px;
@@ -276,23 +276,36 @@ main{
 }
 
 /* Team member photos*/
-.team img {
+.team-member img{
     width: 150px;
     height: 150px;
     object-fit: cover;
+    border-radius: 50%
 }
 
 /*Team card design*/
-.team div{
-    border-radius: 5px;
+.team-member{
+    display: inline-block;
+    width: 200px;
+    margin:15px;
+    padding: 15px;
+    background-color:white;
+    border-radius: 10px;
     box-shadow: 0 2px 5px #cccccc;
+    text-align: center;
+}
+/*Center Team Members*/
+.team {
+    text-align: center;
 }
 
 /*Team member names*/
 .team h3 {
     color:#1e88e5;
     margin-top: 10px;
+    font-size: 14px;
 }
+
 
 /*Team section heading*/
 .team h2 {
@@ -302,7 +315,7 @@ main{
 
 /* Team cards on small screen */
 @media (max-width: 600px) {
-    .team div {
+    .team-member {
         display: block;
         width: 80%;
         margin: 15px auto;
@@ -310,7 +323,7 @@ main{
     }
 }
 /*Team card hover effect*/
-.team div:hover {
+.team-member:hover {
     box-shadow: 0 4px 8px #99999999;
 }
 
@@ -486,6 +499,4530 @@ footer p {
     border: 1px solid #cccccc;
     border-radius: 5px;
 }
-    
+/*Hode hamburger button on big screens*/
+.menu-button{
+    display: none;
+
+}
+
+/* Hide hamburger button on large screens */
+.menu-button {
+    display: none;
+}
+
+/* Hamburger menu on mobile screens */
+@media (max-width: 600px) {
+
+    /* Show hamburger button */
+    .menu-button {
+        display: block;
+        margin: 10px auto;
+    }
+
+    /* Hide navigation links initially */
+    nav ul {
+        display: none;
+    }
+
+    /* Show links when hamburger is clicked */
+    nav ul.show {
+        display: block;
+    }
+
+    /* Display links vertically */
+    nav li {
+        display: block;
+        margin: 10px;
+    }
+}
+
+
+/* ==========================================
+   DARG CAT ADOPTION PAGE
+   Dynamic Cat Cards - Part 2
+========================================== */
+
+/* Cat adoption introduction */
+.cat-intro {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.cat-intro p {
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+/* Cat gallery section */
+.cat-gallery {
+    padding: 30px 15px;
+    text-align: center;
+}
+
+.cat-gallery h2 {
+    color: #1e88e5;
+    margin-bottom: 30px;
+}
+
+/* Responsive cat card layout */
+.cat-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Individual cat cards */
+.cat-card {
+    background-color: #ffffff;
+    border: 2px solid #1e88e5;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+    min-width: 0;
+}
+
+/* Cat card hover effect */
+.cat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Cat names */
+.cat-card h3 {
+    color: #1e88e5;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+/* Cat photographs */
+.cat-card img {
+    display: block;
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 0 auto 15px;
+}
+
+/* Cat descriptions */
+.cat-card p {
+    font-size: 15px;
+    color: #333333;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Tablet responsiveness */
+@media (max-width: 900px) {
+    .cat-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+    }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    .cat-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .cat-gallery {
+        padding: 20px 10px;
+    }
+
+    .cat-card {
+        padding: 15px;
+    }
+
+    .cat-card img {
+        height: 220px;
+    }
+
+    .cat-card h3 {
+        font-size: 20px;
+    }
+}
+
+
+/* Styling the dog adoption introduction */
+.dog-intro {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+/* Styling the introduction paragraph */
+.dog-intro p {
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+/* Styling the dog gallery section */
+.dog-gallery {
+    padding: 30px 15px;
+    text-align: center;
+}
+
+/* Styling the dog gallery heading */
+.dog-gallery h2 {
+    color: #1e88e5;
+    margin-bottom: 30px;
+}
+
+/* Displaying dog cards in 3 columns */
+.dog-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Styling each dog card */
+.dog-card {
+    background-color: white;
+    border: 2px solid #1e88e5;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px #cccccc;
+    min-width: 0;
+}
+
+/* Adding an effect when hovering over a dog card */
+.dog-card:hover {
+    box-shadow: 0 6px 15px #aaaaaa;
+}
+
+/* Styling the dog names */
+.dog-card h3 {
+    color: #1e88e5;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+/* Styling the dog pictures */
+.dog-card img {
+    display: block;
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 0 auto 15px;
+}
+
+/* Styling the dog descriptions */
+.dog-card p {
+    font-size: 15px;
+    color: #333333;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Displaying 2 dog cards per row on tablets */
+@media (max-width: 900px) {
+    .dog-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+/* Making the dog page fit on mobile phones */
+@media (max-width: 600px) {
+
+    /* Displaying 1 dog card per row */
+    .dog-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* Adjusting the gallery spacing */
+    .dog-gallery {
+        padding: 20px 10px;
+    }
+
+    /* Making dog cards fit smaller screens */
+    .dog-card {
+        padding: 15px;
+    }
+
+    /* Adjusting dog picture sizes */
+    .dog-card img {
+        height: 220px;
+    }
+
+    /* Making dog names smaller */
+    .dog-card h3 {
+        font-size: 20px;
+    }
+}
+
+/* Styling the dog and cat tabs */
+.adopt-tabs {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Styling each tab */
+.adopt-tab {
+    display: inline-block;
+    background-color: #f4c20d;
+    color: black;
+    padding: 12px 25px;
+    margin: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+/* Changing the tab colour when hovered */
+.adopt-tab:hover {
+    background-color: #1e88e5;
+    color: white;
+}
+
+/* Making the tabs fit on phones */
+@media (max-width: 600px) {
+    .adopt-tab {
+        display: block;
+        max-width: 250px;
+        margin: 10px auto;
+    }
+}
+
+
+/* Lightbox background covering the screen */
+.animal-lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+/* Styling the lightbox popup */
+.lightbox-content {
+    background-color: white;
+    width: 80%;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Styling the large animal picture */
+#lightbox-image {
+    width: 100%;
+    max-height: 350px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+/* Styling the animal name */
+#lightbox-name {
+    color: #1e88e5;
+    margin-top: 15px;
+}
+
+/* Styling the animal description */
+#lightbox-description {
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* Styling the close button */
+.close-lightbox {
+    display: block;
+    margin-left: auto;
+    margin-bottom: 10px;
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: black;
+}
+
+/* Changing the close button colour */
+.close-lightbox:hover {
+    color: red;
+}
+
+/* Showing that animal pictures can be clicked */
+.dog-card img,
+.cat-card img {
+    cursor: pointer;
+}
+
+/* Making the lightbox fit on mobile phones */
+@media (max-width: 600px) {
+    .lightbox-content {
+        width: 85%;
+        margin: 30px auto;
+        padding: 15px;
+    }
+}
+
+
+
+/* Animal search and filters */
+.animal-controls {
+    text-align: center;
+    padding: 25px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.animal-controls input,
+.animal-controls select {
+    padding: 12px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.animal-controls button {
+    padding: 12px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Animal cards */
+.animal-container {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit, minmax(230px, 1fr)
+    );
+    gap: 20px;
+    padding: 20px;
+}
+
+.animal-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 8px #ddd;
+}
+
+.animal-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.animal-card a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+/* DARG Location Map */
+
+.location-map {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.location-map h2 {
+    margin-bottom: 15px;
+}
+
+.location-map p {
+    margin-bottom: 20px;
+}
+
+/* Interactive Google Map */
+.map-container {
+    max-width: 1000px;
+    margin: 20px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px #ccc;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 450px;
+    display: block;
+}
+
+/* Directions button */
+.directions-button {
+    display: inline-block;
+    padding: 14px 25px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.directions-button:hover {
+    background-color: #388E3C;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+
+    .map-container iframe {
+        height: 300px;
+    }
+
+    .location-map {
+        padding: 20px 10px;
+    }
+}
+
+
+/* ==================================
+   DARG CSS ANIMATIONS AND TRANSITIONS
+   ================================== */
+
+/* 1. Smooth button hover transition */
+button,
+.directions-button,
+.animal-card a,
+.adopt-tab {
+    transition: background-color 0.3s ease,
+                transform 0.3s ease;
+}
+
+button:hover,
+.directions-button:hover,
+.animal-card a:hover,
+.adopt-tab:hover {
+    transform: translateY(-3px);
+}
+
+/* 2. Animal card hover effect */
+.dog-card,
+.cat-card,
+.animal-card {
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.dog-card:hover,
+.cat-card:hover,
+.animal-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* 3. Animal image zoom effect */
+.dog-card img,
+.cat-card img,
+.animal-card img {
+    transition: transform 0.4s ease;
+}
+
+.dog-card img:hover,
+.cat-card img:hover,
+.animal-card img:hover {
+    transform: scale(1.04);
+}
+
+/* 4. Page entrance animation */
+main {
+    animation: fadeIn 0.8s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 5. Navigation link transitions */
+nav a {
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #f4c20d;
+}
+
+/* 6. Floating logo animation */
+header img {
+    animation: floatLogo 3s ease-in-out infinite;
+}
+
+@keyframes floatLogo {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Accessibility: reduce motion when requested */
+@media (prefers-reduced-motion: reduce) {
+    main,
+    header img {
+        animation: none;
+    }
+
+    button,
+    .directions-button,
+    .animal-card a,
+    .adopt-tab,
+    .dog-card,
+    .cat-card,
+    .animal-card,
+    .dog-card img,
+    .cat-card img,
+    .animal-card img,
+    nav a {
+        transition: none;
+    }
+}
+
+
+
+
+/* Team member card animation */
+.team-member {
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px #cccccc;
+}
+
+/* Respect reduced-motion settings */
+@media (prefers-reduced-motion: reduce) {
+    .team-member {
+        transition: none;
+    }
+
+    .team-member:hover {
+        transform: none;
+    }
+}
+
+/* Local SEO section */
+
+.local-seo {
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+.local-seo h2 {
+    color: #1e88e5;
+    margin-bottom: 15px;
+}
+
+.local-seo p {
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.local-seo a {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #f4c20d;
+    color: black;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.local-seo a:hover {
+    background-color: #1e88e5;
+    color: white;
+}
+
+/* =====================================
+   MODERN DARG HOMEPAGE
+   ===================================== */
+
+/* General buttons */
+
+.modern-btn {
+    display: inline-block;
+    padding: 14px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.primary-btn {
+    background-color: #f4c20d;
+    color: #111;
+}
+
+.primary-btn:hover {
+    background-color: #e0af00;
+    color: #111;
+    transform: translateY(-3px);
+}
+
+.outline-btn {
+    border: 2px solid #f4c20d;
+    color: white;
+    background: transparent;
+}
+
+.outline-btn:hover {
+    background-color: #f4c20d;
+    color: black;
+}
+
+.section-label {
+    display: block;
+    color: #b38b00;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+/* Hero section */
+
+.modern-hero {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    padding: 75px 7%;
+    background-color: #111;
+    color: white;
+}
+
+.modern-hero-text {
+    flex: 1;
+}
+
+.hero-label {
+    display: inline-block;
+    background-color: #292929;
+    color: #f4c20d;
+    padding: 10px 15px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.modern-hero h1 {
+    font-size: 50px;
+    line-height: 1.2;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.modern-hero h1 span {
+    display: block;
+    color: #f4c20d;
+}
+
+.modern-hero h2 {
+    color: white;
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+
+.modern-hero p {
+    color: #ddd;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.modern-hero-image {
+    flex: 1;
+    position: relative;
+}
+
+.modern-hero-image img {
+    width: 100%;
+    height: 440px;
+    object-fit: cover;
+    border-radius: 20px;
+    display: block;
+}
+
+.hero-image-label {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: white;
+    color: #111;
+    padding: 14px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+/* Welcome section */
+
+.modern-intro {
+    text-align: center;
+    padding: 85px 20px;
+    background-color: white;
+}
+
+.modern-intro h2 {
+    color: #111;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.modern-intro h2 span {
+    display: block;
+    color: #b38b00;
+}
+
+.modern-intro p {
+    max-width: 720px;
+    margin: 0 auto 25px;
+    color: #555;
+    line-height: 1.9;
+}
+
+.text-link {
+    color: #111;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 2px solid #f4c20d;
+    padding-bottom: 5px;
+}
+
+/* Adoption section */
+
+.modern-adoption {
+    background-color: #f8f8f8;
+    padding: 85px 7%;
+}
+
+.modern-section-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.modern-section-heading h2 {
+    color: #111;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.modern-section-heading p {
+    max-width: 650px;
+    margin: auto;
+    color: #666;
+    line-height: 1.8;
+}
+
+.modern-adoption-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.modern-adoption-card {
+    background-color: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 5px 25px #00000012;
+    transition: 0.3s;
+}
+
+.modern-adoption-card:hover {
+    transform: translateY(-7px);
+}
+
+.modern-adoption-card img {
+    width: 100%;
+    height: 290px;
+    object-fit: cover;
+    display: block;
+}
+
+.adoption-card-content {
+    padding: 30px;
+}
+
+.animal-label {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #b38b00;
+}
+
+.adoption-card-content h3 {
+    color: #111;
+    font-size: 25px;
+    margin: 12px 0;
+}
+
+.adoption-card-content p {
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.adoption-card-content a {
+    color: #111;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.adoption-bottom-link {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Mission section */
+
+.modern-mission {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 85px 8%;
+    background-color: white;
+}
+
+.mission-content {
+    flex: 1;
+}
+
+.mission-content h2 {
+    color: #111;
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.mission-content p {
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.mission-decoration {
+    flex: 1;
+    text-align: center;
+    background-color: #f4c20d;
+    border-radius: 20px;
+    padding: 50px;
+}
+
+.mission-decoration span {
+    font-size: 55px;
+}
+
+.mission-decoration h3 {
+    color: #111;
+    font-size: 26px;
+    margin: 12px 0;
+}
+
+/* How you can help */
+
+.modern-help {
+    background-color: #f8f8f8;
+    padding: 85px 7%;
+}
+
+.modern-help-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.modern-help-card {
+    background-color: white;
+    padding: 40px 25px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 4px 20px #00000010;
+    transition: 0.3s;
+}
+
+.modern-help-card:hover {
+    transform: translateY(-7px);
+}
+
+.help-icon {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.modern-help-card h3 {
+    color: #111;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.modern-help-card p {
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.modern-help-card a {
+    color: #111;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Donation section */
+
+.modern-donation {
+    text-align: center;
+    background-color: #171717;
+    color: white;
+    padding: 90px 20px;
+}
+
+.modern-donation .section-label {
+    color: #f4c20d;
+}
+
+.modern-donation h2 {
+    color: white;
+    font-size: 38px;
+    max-width: 750px;
+    margin: 0 auto 20px;
+}
+
+.modern-donation p {
+    max-width: 650px;
+    margin: 0 auto 30px;
+    color: #ddd;
+    line-height: 1.8;
+}
+
+/* Location section */
+
+.modern-location {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 75px 10%;
+    background-color: white;
+}
+
+.location-content {
+    flex: 2;
+}
+
+.modern-location h2 {
+    color: #111;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.modern-location p {
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+.location-symbol {
+    flex: 1;
+    text-align: center;
+    font-size: 110px;
+}
+
+/* Responsive layout */
+
+@media (max-width: 900px) {
+
+    .modern-hero,
+    .modern-mission,
+    .modern-location {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .modern-hero h1 {
+        font-size: 38px;
+    }
+
+    .modern-hero-text,
+    .modern-hero-image,
+    .mission-content,
+    .location-content {
+        width: 100%;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .modern-adoption-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .modern-help-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .modern-hero-image img {
+        height: 350px;
+    }
+
+    .modern-intro h2,
+    .modern-section-heading h2,
+    .mission-content h2,
+    .modern-donation h2 {
+        font-size: 30px;
+    }
+
+    .mission-decoration {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .modern-hero {
+        padding: 50px 20px;
+    }
+
+    .modern-hero h1 {
+        font-size: 32px;
+    }
+
+    .modern-hero-image img {
+        height: 270px;
+    }
+
+    .modern-adoption,
+    .modern-help {
+        padding: 60px 20px;
+    }
+
+    .mission-decoration {
+        padding: 30px;
+    }
+
+    .location-symbol {
+        font-size: 75px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .modern-btn,
+    .modern-adoption-card,
+    .modern-help-card {
+        transition: none;
+    }
+}
+
+/* =====================================
+   DARG HOMEPAGE COLOUR AND IMAGE FIX
+   ===================================== */
+
+/* Keep the hero image unchanged */
+
+/* Fix dog and cat pictures */
+.modern-adoption-card img {
+    width: 100%;
+    height: 320px;
+    object-fit: contain;
+    background-color: #f5f5f5;
+    display: block;
+}
+
+/* Add blue borders to adoption cards */
+.modern-adoption-card {
+    border: 2px solid #1e88e5;
+    border-radius: 18px;
+}
+
+/* Blue adoption section heading */
+.modern-section-heading h2 {
+    color: #1e88e5;
+}
+
+/* Blue links inside adoption cards */
+.adoption-card-content a {
+    color: #1e88e5;
+    font-weight: bold;
+}
+
+.adoption-card-content a:hover {
+    color: #111;
+}
+
+/* Blue welcome section heading */
+.modern-intro h2 span {
+    color: #1e88e5;
+}
+
+/* Blue mission heading */
+.mission-content h2 {
+    color: #1e88e5;
+}
+
+/* Blue help card headings */
+.modern-help-card h3 {
+    color: #1e88e5;
+}
+
+/* Blue location heading */
+.modern-location h2 {
+    color: #1e88e5;
+}
+
+/* Blue buttons on hover */
+.primary-btn:hover {
+    background-color: #1e88e5;
+    color: white;
+}
+
+/* Blue links on hover */
+.modern-help-card a:hover {
+    color: #1e88e5;
+}
+
+/* Mobile image sizes */
+@media (max-width: 600px) {
+    .modern-adoption-card img {
+        height: 250px;
+    }
+}
+
+/* =========================================
+   MODERN ABOUT US PAGE
+   ========================================= */
+
+/* About page buttons */
+
+.about-button {
+    display: inline-block;
+    padding: 14px 25px;
+    background-color: #f4c20d;
+    color: #111;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.about-button:hover {
+    background-color: #1e88e5;
+    color: white;
+}
+
+/* Small section labels */
+
+.about-section-label {
+    display: block;
+    color: #1e88e5;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+/* =========================================
+   HERO
+   ========================================= */
+
+.about-modern-hero {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 95px 20px;
+}
+
+.about-label {
+    display: inline-block;
+    background-color: #292929;
+    color: #f4c20d;
+    padding: 10px 18px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.about-modern-hero h1 {
+    color: white;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.about-modern-hero h1 span {
+    color: #f4c20d;
+}
+
+.about-modern-hero p {
+    color: #ddd;
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 650px;
+    margin: auto;
+}
+
+/* =========================================
+   INTRODUCTION
+   ========================================= */
+
+.about-modern-intro {
+    text-align: center;
+    background-color: white;
+    padding: 85px 20px;
+}
+
+.about-modern-intro h2 {
+    color: #111;
+    font-size: 38px;
+    max-width: 750px;
+    margin: 0 auto 25px;
+}
+
+.about-modern-intro p {
+    color: #555;
+    max-width: 750px;
+    margin: 0 auto 20px;
+    line-height: 1.9;
+}
+
+.about-modern-intro .about-button {
+    margin-top: 15px;
+}
+
+/* =========================================
+   HISTORY
+   ========================================= */
+
+.about-modern-history {
+    display: flex;
+    align-items: center;
+    gap: 55px;
+    padding: 85px 8%;
+    background-color: #f8f8f8;
+}
+
+.about-history-content {
+    flex: 2;
+}
+
+.about-history-content h2 {
+    color: #1e88e5;
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+.about-history-content p {
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+.about-history-box {
+    flex: 1;
+    text-align: center;
+    background-color: #f4c20d;
+    padding: 45px 30px;
+    border-radius: 20px;
+}
+
+.about-history-box span {
+    font-size: 55px;
+}
+
+.about-history-box h3 {
+    color: #111;
+    font-size: 25px;
+    margin: 14px 0;
+}
+
+/* =========================================
+   MISSION AND VISION
+   ========================================= */
+
+.about-values {
+    padding: 85px 7%;
+    background-color: white;
+}
+
+.about-values-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about-values-heading h2 {
+    color: #111;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.about-values-heading p {
+    color: #666;
+    max-width: 650px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+.about-values-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.about-value-card {
+    background-color: #f8f8f8;
+    border: 2px solid #1e88e5;
+    border-radius: 18px;
+    padding: 35px;
+    transition: 0.3s;
+}
+
+.about-value-card:hover {
+    transform: translateY(-5px);
+}
+
+.about-value-icon {
+    font-size: 40px;
+    color: #1e88e5;
+    margin-bottom: 15px;
+}
+
+.about-value-card h3 {
+    color: #1e88e5;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.about-value-card p {
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+/* =========================================
+   TEAM
+   ========================================= */
+
+.about-modern-team {
+    padding: 85px 7%;
+    background-color: #f8f8f8;
+}
+
+.about-team-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.about-team-heading h2 {
+    color: #1e88e5;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.about-team-heading p {
+    color: #666;
+    max-width: 650px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+.about-team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1150px;
+    margin: auto;
+}
+
+.about-team-card {
+    background-color: white;
+    border-radius: 16px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 5px 20px #00000012;
+    transition: 0.3s;
+}
+
+.about-team-card:hover {
+    transform: translateY(-6px);
+}
+
+.about-team-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: contain;
+    background-color: #f5f5f5;
+    display: block;
+}
+
+.about-team-card h3 {
+    color: #1e88e5;
+    font-size: 21px;
+    margin: 20px 10px 8px;
+}
+
+.about-team-card p {
+    color: #555;
+    margin: 0 10px 25px;
+}
+
+/* =========================================
+   GET INVOLVED
+   ========================================= */
+
+.about-get-involved {
+    text-align: center;
+    background-color: #171717;
+    color: white;
+    padding: 85px 20px;
+}
+
+.about-get-involved .about-section-label {
+    color: #f4c20d;
+}
+
+.about-get-involved h2 {
+    color: white;
+    font-size: 38px;
+    max-width: 750px;
+    margin: 0 auto 20px;
+}
+
+.about-get-involved p {
+    color: #ddd;
+    line-height: 1.8;
+    max-width: 650px;
+    margin: 0 auto 30px;
+}
+
+.about-action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.about-outline-button {
+    display: inline-block;
+    padding: 12px 23px;
+    border: 2px solid #1e88e5;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.about-outline-button:hover {
+    background-color: #1e88e5;
+    color: white;
+}
+
+/* =========================================
+   MOBILE RESPONSIVE DESIGN
+   ========================================= */
+
+@media (max-width: 900px) {
+
+    .about-modern-history {
+        flex-direction: column;
+    }
+
+    .about-history-box {
+        width: 100%;
+    }
+
+    .about-team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-values-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .about-modern-hero h1 {
+        font-size: 35px;
+    }
+
+    .about-modern-intro h2,
+    .about-history-content h2,
+    .about-values-heading h2,
+    .about-team-heading h2,
+    .about-get-involved h2 {
+        font-size: 29px;
+    }
+
+    .about-modern-history,
+    .about-values,
+    .about-modern-team {
+        padding: 60px 20px;
+    }
+
+    .about-team-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-team-card img {
+        height: 300px;
+    }
+
+    .about-value-card {
+        padding: 25px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .about-button,
+    .about-value-card,
+    .about-team-card,
+    .about-outline-button {
+        transition: none;
+    }
+}
+
+/* =========================================
+   MODERN ADOPTION PAGE
+   ========================================= */
+
+/* Adoption hero */
+
+.adopt-modern-hero {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.adopt-label {
+    display: inline-block;
+    background-color: #292929;
+    color: #f4c20d;
+    padding: 10px 18px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.adopt-modern-hero h1 {
+    color: white;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.adopt-modern-hero h1 span {
+    color: #f4c20d;
+}
+
+.adopt-modern-hero p {
+    color: #ddd;
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 700px;
+    margin: auto;
+}
+
+/* Section labels */
+
+.adopt-section-label {
+    display: block;
+    color: #1e88e5;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+/* Choose dogs or cats */
+
+.adopt-modern-choose {
+    text-align: center;
+    background-color: white;
+    padding: 85px 7%;
+}
+
+.adopt-modern-choose h2 {
+    color: #111;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.adopt-modern-choose > p {
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+.adopt-modern-tabs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 950px;
+    margin: auto;
+}
+
+.adopt-modern-tab {
+    display: block;
+    background-color: #f8f8f8;
+    border: 2px solid #1e88e5;
+    border-radius: 18px;
+    padding: 40px 25px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.adopt-modern-tab:hover {
+    transform: translateY(-6px);
+    background-color: #eef7ff;
+}
+
+.adopt-tab-icon {
+    display: block;
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.adopt-modern-tab h3 {
+    color: #1e88e5;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.adopt-modern-tab p {
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.adopt-tab-link {
+    color: #111;
+    font-weight: bold;
+}
+
+/* Search and filters */
+
+.adopt-modern-search {
+    padding: 75px 7%;
+    background-color: #f8f8f8;
+}
+
+.adopt-search-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.adopt-search-heading h2 {
+    color: #1e88e5;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.adopt-search-heading p {
+    color: #666;
+    line-height: 1.8;
+}
+
+.adopt-modern-search .animal-controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 18px;
+    max-width: 1150px;
+    margin: auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px #00000012;
+}
+
+.adopt-control-group {
+    flex: 1 1 180px;
+    min-width: 160px;
+    text-align: left;
+}
+
+.adopt-control-group label {
+    display: block;
+    color: #111;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.adopt-modern-search .adopt-control-group input,
+.adopt-modern-search .adopt-control-group select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
+    color: #111;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.adopt-modern-search .adopt-control-group input:focus,
+.adopt-modern-search .adopt-control-group select:focus {
+    outline: 2px solid #1e88e5;
+    border-color: #1e88e5;
+}
+
+.adopt-reset-group {
+    flex: 0 1 auto;
+}
+
+.adopt-modern-search #resetAnimals {
+    padding: 13px 22px;
+    border: none;
+    border-radius: 8px;
+    background-color: #f4c20d;
+    color: #111;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.adopt-modern-search #resetAnimals:hover {
+    background-color: #1e88e5;
+    color: white;
+}
+
+/* Animal results */
+
+.adopt-modern-results {
+    padding: 75px 7%;
+    background-color: white;
+    text-align: center;
+}
+
+.adopt-modern-results h2 {
+    color: #1e88e5;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.adopt-modern-results #animalCount {
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Existing JavaScript animal cards are preserved */
+.adopt-modern-results .animal-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Adoption support banner */
+
+.adopt-modern-support {
+    background-color: #171717;
+    color: white;
+    text-align: center;
+    padding: 85px 20px;
+}
+
+.adopt-modern-support .adopt-section-label {
+    color: #f4c20d;
+}
+
+.adopt-modern-support h2 {
+    color: white;
+    font-size: 38px;
+    max-width: 750px;
+    margin: 0 auto 20px;
+}
+
+.adopt-modern-support p {
+    color: #ddd;
+    line-height: 1.8;
+    max-width: 650px;
+    margin: 0 auto 30px;
+}
+
+.adopt-support-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.adopt-main-button {
+    display: inline-block;
+    background-color: #f4c20d;
+    color: #111;
+    padding: 14px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.adopt-main-button:hover {
+    background-color: #1e88e5;
+    color: white;
+}
+
+.adopt-outline-button {
+    display: inline-block;
+    border: 2px solid #1e88e5;
+    color: white;
+    padding: 12px 23px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.adopt-outline-button:hover {
+    background-color: #1e88e5;
+    color: white;
+}
+
+/* Mobile design */
+
+@media (max-width: 900px) {
+
+    .adopt-modern-tabs {
+        grid-template-columns: 1fr;
+    }
+
+    .adopt-modern-search .animal-controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .adopt-control-group {
+        flex: auto;
+        width: 100%;
+    }
+
+    .adopt-reset-group {
+        width: 100%;
+    }
+
+    .adopt-modern-search #resetAnimals {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .adopt-modern-hero h1 {
+        font-size: 35px;
+    }
+
+    .adopt-modern-choose h2,
+    .adopt-search-heading h2,
+    .adopt-modern-results h2,
+    .adopt-modern-support h2 {
+        font-size: 29px;
+    }
+
+    .adopt-modern-choose,
+    .adopt-modern-search,
+    .adopt-modern-results {
+        padding: 60px 20px;
+    }
+
+    .adopt-modern-tab {
+        padding: 30px 20px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .adopt-modern-tab {
+        transition: none;
+    }
+}
+
+
+/* =========================================
+   MODERN DOG ADOPTION PAGE
+   ========================================= */
+
+/* Hero section */
+
+.dogs-modern-hero {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.dogs-label {
+    display: inline-block;
+    background-color: #292929;
+    color: #f4c20d;
+    padding: 10px 18px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.dogs-modern-hero h1 {
+    color: white;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.dogs-modern-hero h1 span {
+    color: #f4c20d;
+}
+
+.dogs-modern-hero p {
+    color: #ddd;
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+/* Back button */
+
+.dogs-back-button {
+    display: inline-block;
+    color: #f4c20d;
+    border: 2px solid #f4c20d;
+    border-radius: 8px;
+    padding: 12px 22px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.dogs-back-button:hover {
+    background-color: #f4c20d;
+    color: #111;
+}
+
+/* Section labels */
+
+.dogs-section-label {
+    display: block;
+    color: #1e88e5;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+/* Introduction */
+
+.dogs-modern-intro {
+    text-align: center;
+    background-color: white;
+    padding: 80px 20px;
+}
+
+.dogs-modern-intro h2 {
+    color: #111;
+    font-size: 36px;
+    max-width: 750px;
+    margin: 0 auto 25px;
+}
+
+.dogs-modern-intro p {
+    color: #555;
+    max-width: 750px;
+    margin: 0 auto 18px;
+    line-height: 1.8;
+}
+
+/* Dog gallery */
+
+.dogs-modern-gallery {
+    background-color: #f8f8f8;
+    padding: 80px 7%;
+}
+
+.dogs-gallery-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.dogs-gallery-heading h2 {
+    color: #1e88e5;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.dogs-gallery-heading p {
+    color: #666;
+    line-height: 1.8;
+}
+
+/* Layout for JavaScript dog cards */
+
+.dogs-modern-gallery .dog-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Dog cards created by JavaScript */
+
+.dogs-modern-gallery .dog-card {
+    background-color: white;
+    border: 2px solid #1e88e5;
+    border-radius: 16px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 5px 20px #00000012;
+    transition: 0.3s;
+}
+
+.dogs-modern-gallery .dog-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Show full dog pictures without cropping */
+
+.dogs-modern-gallery .dog-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: contain;
+    background-color: #f5f5f5;
+    display: block;
+}
+
+/* Dog names */
+
+.dogs-modern-gallery .dog-card h3 {
+    color: #1e88e5;
+    font-size: 23px;
+    margin: 18px 12px 10px;
+}
+
+/* Dog descriptions */
+
+.dogs-modern-gallery .dog-card p {
+    color: #555;
+    line-height: 1.7;
+    padding: 0 18px;
+    margin-bottom: 18px;
+}
+
+/* Adoption links and buttons */
+
+.dogs-modern-gallery .dog-card a,
+.dogs-modern-gallery .dog-card button {
+    display: inline-block;
+    background-color: #f4c20d;
+    color: #111;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    margin: 8px 5px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.dogs-modern-gallery .dog-card a:hover,
+.dogs-modern-gallery .dog-card button:hover {
+    background-color: #1e88e5;
+    color: white;
+}
+
+/* Adoption information section */
+
+.dogs-adoption-info {
+    background-color: #171717;
+    color: white;
+    text-align: center;
+    padding: 85px 20px;
+}
+
+.dogs-adoption-info .dogs-section-label {
+    color: #f4c20d;
+}
+
+.dogs-adoption-info h2 {
+    color: white;
+    font-size: 38px;
+    max-width: 750px;
+    margin: 0 auto 20px;
+}
+
+.dogs-adoption-info p {
+    color: #ddd;
+    line-height: 1.8;
+    max-width: 650px;
+    margin: 0 auto 30px;
+}
+
+.dogs-action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.dogs-main-button {
+    display: inline-block;
+    background-color: #f4c20d;
+    color: #111;
+    padding: 14px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.dogs-main-button:hover {
+    background-color: #1e88e5;
+    color: white;
+}
+
+.dogs-outline-button {
+    display: inline-block;
+    border: 2px solid #1e88e5;
+    color: white;
+    padding: 12px 23px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.dogs-outline-button:hover {
+    background-color: #1e88e5;
+    color: white;
+}
+
+/* Responsive layout */
+
+@media (max-width: 900px) {
+
+    .dogs-modern-gallery .dog-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+
+    .dogs-modern-hero h1 {
+        font-size: 35px;
+    }
+
+    .dogs-modern-intro h2,
+    .dogs-gallery-heading h2,
+    .dogs-adoption-info h2 {
+        font-size: 29px;
+    }
+
+    .dogs-modern-gallery .dog-container {
+        grid-template-columns: 1fr;
+    }
+
+    .dogs-modern-gallery {
+        padding: 60px 20px;
+    }
+
+    .dogs-modern-gallery .dog-card img {
+        height: 250px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .dogs-modern-gallery .dog-card {
+        transition: none;
+    }
+}
+
+/* =========================================
+   MODERN CAT ADOPTION PAGE
+   ========================================= */
+
+/* Hero section */
+
+.cats-modern-hero {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.cats-label {
+    display: inline-block;
+    background-color: #292929;
+    color: #f4c20d;
+    padding: 10px 18px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.cats-modern-hero h1 {
+    color: white;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.cats-modern-hero h1 span {
+    color: #f4c20d;
+}
+
+.cats-modern-hero p {
+    color: #ddd;
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+/* Back button */
+
+.cats-back-button {
+    display: inline-block;
+    color: #f4c20d;
+    border: 2px solid #f4c20d;
+    border-radius: 8px;
+    padding: 12px 22px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cats-back-button:hover {
+    background-color: #f4c20d;
+    color: #111;
+}
+
+/* Section labels */
+
+.cats-section-label {
+    display: block;
+    color: #1e88e5;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+/* Introduction */
+
+.cats-modern-intro {
+    background-color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.cats-modern-intro h2 {
+    color: #111;
+    font-size: 36px;
+    max-width: 750px;
+    margin: 0 auto 25px;
+}
+
+.cats-modern-intro p {
+    color: #555;
+    line-height: 1.8;
+    max-width: 750px;
+    margin: 0 auto 18px;
+}
+
+/* Cat gallery */
+
+.cats-modern-gallery {
+    background-color: #f8f8f8;
+    padding: 80px 7%;
+}
+
+.cats-gallery-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.cats-gallery-heading h2 {
+    color: #1e88e5;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.cats-gallery-heading p {
+    color: #666;
+    line-height: 1.8;
+}
+
+/* Layout for JavaScript cat cards */
+
+.cats-modern-gallery .cat-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Cat cards created by JavaScript */
+
+.cats-modern-gallery .cat-card {
+    background-color: white;
+    border: 2px solid #1e88e5;
+    border-radius: 16px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 5px 20px #00000012;
+    transition: 0.3s;
+}
+
+.cats-modern-gallery .cat-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Show full cat pictures without cropping */
+
+.cats-modern-gallery .cat-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: contain;
+    background-color: #f5f5f5;
+    display: block;
+}
+
+/* Cat names */
+
+.cats-modern-gallery .cat-card h3 {
+    color: #1e88e5;
+    font-size: 23px;
+    margin: 18px 12px 10px;
+}
+
+/* Cat descriptions */
+
+.cats-modern-gallery .cat-card p {
+    color: #555;
+    line-height: 1.7;
+    padding: 0 18px;
+    margin-bottom: 18px;
+}
+
+/* Cat card buttons and links */
+
+.cats-modern-gallery .cat-card a,
+.cats-modern-gallery .cat-card button {
+    display: inline-block;
+    background-color: #f4c20d;
+    color: #111;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    margin: 8px 5px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.cats-modern-gallery .cat-card a:hover,
+.cats-modern-gallery .cat-card button:hover {
+    background-color: #1e88e5;
+    color: white;
+}
+
+/* Adoption information section */
+
+.cats-adoption-info {
+    background-color: #171717;
+    color: white;
+    text-align: center;
+    padding: 85px 20px;
+}
+
+.cats-adoption-info .cats-section-label {
+    color: #f4c20d;
+}
+
+.cats-adoption-info h2 {
+    color: white;
+    font-size: 38px;
+    max-width: 750px;
+    margin: 0 auto 20px;
+}
+
+.cats-adoption-info p {
+    color: #ddd;
+    line-height: 1.8;
+    max-width: 650px;
+    margin: 0 auto 30px;
+}
+
+.cats-action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.cats-main-button {
+    display: inline-block;
+    background-color: #f4c20d;
+    color: #111;
+    padding: 14px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cats-main-button:hover {
+    background-color: #1e88e5;
+    color: white;
+}
+
+.cats-outline-button {
+    display: inline-block;
+    border: 2px solid #1e88e5;
+    color: white;
+    padding: 12px 23px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cats-outline-button:hover {
+    background-color: #1e88e5;
+    color: white;
+}
+
+/* Mobile design */
+
+@media (max-width: 900px) {
+
+    .cats-modern-gallery .cat-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+
+    .cats-modern-hero h1 {
+        font-size: 35px;
+    }
+
+    .cats-modern-intro h2,
+    .cats-gallery-heading h2,
+    .cats-adoption-info h2 {
+        font-size: 29px;
+    }
+
+    .cats-modern-gallery .cat-container {
+        grid-template-columns: 1fr;
+    }
+
+    .cats-modern-gallery {
+        padding: 60px 20px;
+    }
+
+    .cats-modern-gallery .cat-card img {
+        height: 250px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .cats-modern-gallery .cat-card {
+        transition: none;
+    }
+}
+
+/* =========================================
+   MODERN DONATION PAGE
+   ========================================= */
+
+/* Hero */
+
+.donate-modern-hero {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.donate-label {
+    display: inline-block;
+    background-color: #292929;
+    color: #f4c20d;
+    padding: 10px 18px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.donate-modern-hero h1 {
+    color: white;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.donate-modern-hero h1 span {
+    color: #f4c20d;
+}
+
+.donate-modern-hero p {
+    color: #ddd;
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+/* Section labels */
+
+.donate-section-label {
+    display: block;
+    color: #1e88e5;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+/* Buttons */
+
+.donate-main-button {
+    display: inline-block;
+    background-color: #f4c20d;
+    color: #111;
+    padding: 14px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.donate-main-button:hover {
+    background-color: #1e88e5;
+    color: white;
+}
+
+.donate-outline-button {
+    display: inline-block;
+    border: 2px solid #1e88e5;
+    color: white;
+    padding: 12px 23px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.donate-outline-button:hover {
+    background-color: #1e88e5;
+    color: white;
+}
+
+/* Introduction */
+
+.donate-modern-intro {
+    background-color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.donate-modern-intro h2 {
+    color: #111;
+    font-size: 36px;
+    max-width: 750px;
+    margin: 0 auto 25px;
+}
+
+.donate-modern-intro p {
+    color: #555;
+    line-height: 1.8;
+    max-width: 750px;
+    margin: auto;
+}
+
+/* How donations help */
+
+.donate-modern-help {
+    background-color: #f8f8f8;
+    padding: 80px 7%;
+}
+
+.donate-help-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.donate-help-heading h2 {
+    color: #1e88e5;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.donate-help-heading p {
+    color: #666;
+    line-height: 1.8;
+}
+
+.donate-help-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.donate-help-card {
+    background-color: white;
+    border: 2px solid #1e88e5;
+    border-radius: 16px;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.donate-help-card span {
+    display: block;
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.donate-help-card h3 {
+    color: #1e88e5;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.donate-help-card p {
+    color: #555;
+    line-height: 1.7;
+}
+
+/* Donation form section */
+
+.donate-modern-form-section {
+    background-color: white;
+    padding: 80px 20px;
+}
+
+.donate-form-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.donate-form-heading h2 {
+    color: #1e88e5;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.donate-form-heading p {
+    color: #555;
+    max-width: 650px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+.donate-form-box {
+    background-color: #f8f8f8;
+    border: 2px solid #1e88e5;
+    border-radius: 18px;
+    padding: 35px;
+    max-width: 650px;
+    margin: auto;
+    box-shadow: 0 5px 20px #00000012;
+}
+
+.donate-form-box label {
+    display: block;
+    color: #111;
+    font-weight: bold;
+    margin-bottom: 9px;
+}
+
+.donate-form-box input,
+.donate-form-box select,
+.donate-form-box textarea {
+    display: block;
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 22px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
+    color: #111;
+    font-size: 15px;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+.donate-form-box input:focus,
+.donate-form-box select:focus,
+.donate-form-box textarea:focus {
+    outline: 2px solid #1e88e5;
+    border-color: #1e88e5;
+}
+
+.donate-form-box button {
+    display: block;
+    width: 100%;
+    background-color: #f4c20d;
+    color: #111;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.donate-form-box button:hover {
+    background-color: #1e88e5;
+    color: white;
+}
+
+.donate-form-note {
+    color: #666;
+    font-size: 13px;
+    line-height: 1.7;
+    text-align: center;
+    margin-top: 18px;
+}
+
+#donation-feedback {
+    color: #1e88e5;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* Bottom support section */
+
+.donate-modern-bottom {
+    background-color: #171717;
+    color: white;
+    text-align: center;
+    padding: 85px 20px;
+}
+
+.donate-modern-bottom .donate-section-label {
+    color: #f4c20d;
+}
+
+.donate-modern-bottom h2 {
+    color: white;
+    font-size: 38px;
+    max-width: 750px;
+    margin: 0 auto 20px;
+}
+
+.donate-modern-bottom p {
+    color: #ddd;
+    line-height: 1.8;
+    max-width: 650px;
+    margin: 0 auto 30px;
+}
+
+.donate-bottom-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* Mobile design */
+
+@media (max-width: 900px) {
+
+    .donate-help-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+
+    .donate-modern-hero h1 {
+        font-size: 35px;
+    }
+
+    .donate-modern-intro h2,
+    .donate-help-heading h2,
+    .donate-form-heading h2,
+    .donate-modern-bottom h2 {
+        font-size: 29px;
+    }
+
+    .donate-help-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .donate-modern-help,
+    .donate-modern-form-section {
+        padding: 60px 20px;
+    }
+
+    .donate-form-box {
+        padding: 22px;
+    }
+}
+
+/* =========================================
+   MODERN VOLUNTEER PAGE
+   ========================================= */
+
+/* Hero section */
+
+.volunteer-modern-hero {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.volunteer-label {
+    display: inline-block;
+    background-color: #292929;
+    color: #f4c20d;
+    padding: 10px 18px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.volunteer-modern-hero h1 {
+    color: white;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.volunteer-modern-hero h1 span {
+    color: #f4c20d;
+}
+
+.volunteer-modern-hero p {
+    color: #ddd;
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+/* Section labels */
+
+.volunteer-section-label {
+    display: block;
+    color: #1e88e5;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+/* Main buttons */
+
+.volunteer-main-button {
+    display: inline-block;
+    background-color: #f4c20d;
+    color: #111;
+    padding: 14px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.volunteer-main-button:hover {
+    background-color: #1e88e5;
+    color: white;
+}
+
+.volunteer-outline-button {
+    display: inline-block;
+    border: 2px solid #1e88e5;
+    color: white;
+    padding: 12px 23px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.volunteer-outline-button:hover {
+    background-color: #1e88e5;
+    color: white;
+}
+
+/* Introduction */
+
+.volunteer-modern-intro {
+    background-color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.volunteer-modern-intro h2 {
+    color: #111;
+    font-size: 36px;
+    max-width: 750px;
+    margin: 0 auto 25px;
+}
+
+.volunteer-modern-intro p {
+    color: #555;
+    line-height: 1.8;
+    max-width: 750px;
+    margin: 0 auto 18px;
+}
+
+/* Benefits section */
+
+.volunteer-modern-benefits {
+    background-color: #f8f8f8;
+    padding: 80px 7%;
+}
+
+.volunteer-benefits-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.volunteer-benefits-heading h2 {
+    color: #1e88e5;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.volunteer-benefits-heading p {
+    color: #666;
+    line-height: 1.8;
+}
+
+.volunteer-benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.volunteer-benefit-card {
+    background-color: white;
+    border: 2px solid #1e88e5;
+    border-radius: 16px;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.volunteer-benefit-card span {
+    display: block;
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.volunteer-benefit-card h3 {
+    color: #1e88e5;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.volunteer-benefit-card p {
+    color: #555;
+    line-height: 1.7;
+}
+
+/* Volunteer form section */
+
+.volunteer-modern-form-section {
+    background-color: white;
+    padding: 80px 20px;
+}
+
+.volunteer-form-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.volunteer-form-heading h2 {
+    color: #1e88e5;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.volunteer-form-heading p {
+    color: #555;
+    line-height: 1.8;
+    max-width: 650px;
+    margin: auto;
+}
+
+.volunteer-form-box {
+    background-color: #f8f8f8;
+    border: 2px solid #1e88e5;
+    border-radius: 18px;
+    padding: 35px;
+    max-width: 650px;
+    margin: auto;
+    box-shadow: 0 5px 20px #00000012;
+}
+
+.volunteer-form-box label {
+    display: block;
+    color: #111;
+    font-weight: bold;
+    margin-bottom: 9px;
+}
+
+.volunteer-form-box input,
+.volunteer-form-box textarea {
+    display: block;
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 22px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
+    color: #111;
+    font-size: 15px;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+.volunteer-form-box input:focus,
+.volunteer-form-box textarea:focus {
+    outline: 2px solid #1e88e5;
+    border-color: #1e88e5;
+}
+
+.volunteer-form-box button {
+    display: block;
+    width: 100%;
+    background-color: #f4c20d;
+    color: #111;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.volunteer-form-box button:hover {
+    background-color: #1e88e5;
+    color: white;
+}
+
+.volunteer-form-note {
+    color: #666;
+    font-size: 13px;
+    line-height: 1.7;
+    text-align: center;
+    margin-top: 18px;
+}
+
+#volunteer-feedback {
+    color: #1e88e5;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* Bottom section */
+
+.volunteer-modern-bottom {
+    background-color: #171717;
+    color: white;
+    text-align: center;
+    padding: 85px 20px;
+}
+
+.volunteer-modern-bottom .volunteer-section-label {
+    color: #f4c20d;
+}
+
+.volunteer-modern-bottom h2 {
+    color: white;
+    font-size: 38px;
+    max-width: 750px;
+    margin: 0 auto 20px;
+}
+
+.volunteer-modern-bottom p {
+    color: #ddd;
+    line-height: 1.8;
+    max-width: 650px;
+    margin: 0 auto 30px;
+}
+
+.volunteer-bottom-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* Mobile design */
+
+@media (max-width: 900px) {
+
+    .volunteer-benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+
+    .volunteer-modern-hero h1 {
+        font-size: 35px;
+    }
+
+    .volunteer-modern-intro h2,
+    .volunteer-benefits-heading h2,
+    .volunteer-form-heading h2,
+    .volunteer-modern-bottom h2 {
+        font-size: 29px;
+    }
+
+    .volunteer-benefits-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .volunteer-modern-benefits,
+    .volunteer-modern-form-section {
+        padding: 60px 20px;
+    }
+
+    .volunteer-form-box {
+        padding: 22px;
+    }
+}
+
+/* =========================================
+   MODERN DARG SHOP PAGE
+   ========================================= */
+
+/* Shop hero */
+
+.shop-modern-hero {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.shop-label {
+    display: inline-block;
+    background-color: #292929;
+    color: #f4c20d;
+    padding: 10px 18px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.shop-modern-hero h1 {
+    color: white;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.shop-modern-hero h1 span {
+    color: #f4c20d;
+}
+
+.shop-modern-hero p {
+    color: #ddd;
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+/* Small section labels */
+
+.shop-section-label {
+    display: block;
+    color: #1e88e5;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+/* Shop buttons */
+
+.shop-main-button {
+    display: inline-block;
+    background-color: #f4c20d;
+    color: #111;
+    padding: 14px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.shop-main-button:hover {
+    background-color: #1e88e5;
+    color: white;
+}
+
+.shop-outline-button {
+    display: inline-block;
+    border: 2px solid #1e88e5;
+    color: white;
+    padding: 12px 23px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.shop-outline-button:hover {
+    background-color: #1e88e5;
+    color: white;
+}
+
+/* Shop introduction */
+
+.shop-modern-intro {
+    background-color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.shop-modern-intro h2 {
+    color: #111;
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+.shop-modern-intro p {
+    color: #555;
+    line-height: 1.8;
+    max-width: 750px;
+    margin: 0 auto 18px;
+}
+
+/* Shop collection */
+
+.shop-modern-collection {
+    background-color: #f8f8f8;
+    padding: 80px 7%;
+}
+
+.shop-collection-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.shop-collection-heading h2 {
+    color: #1e88e5;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.shop-collection-heading p {
+    color: #666;
+    line-height: 1.8;
+}
+
+.shop-feature-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1150px;
+    margin: auto;
+    background-color: white;
+    border: 2px solid #1e88e5;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px #00000012;
+}
+
+.shop-feature-image {
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.shop-feature-image img {
+    width: 100%;
+    max-height: 440px;
+    object-fit: contain;
+    display: block;
+    border-radius: 10px;
+}
+
+.shop-feature-content {
+    padding: 45px 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.shop-feature-content h3 {
+    color: #1e88e5;
+    font-size: 29px;
+    margin-bottom: 20px;
+}
+
+.shop-feature-content p {
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Benefits */
+
+.shop-modern-benefits {
+    background-color: white;
+    padding: 80px 7%;
+}
+
+.shop-benefits-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.shop-benefits-heading h2 {
+    color: #1e88e5;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.shop-benefits-heading p {
+    color: #666;
+    line-height: 1.8;
+}
+
+.shop-benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.shop-benefit-card {
+    background-color: #f8f8f8;
+    border: 2px solid #1e88e5;
+    border-radius: 16px;
+    padding: 35px 25px;
+    text-align: center;
+}
+
+.shop-benefit-card span {
+    display: block;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.shop-benefit-card h3 {
+    color: #1e88e5;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.shop-benefit-card p {
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Visit section */
+
+.shop-modern-visit {
+    background-color: #171717;
+    color: white;
+    text-align: center;
+    padding: 85px 20px;
+}
+
+.shop-modern-visit .shop-section-label {
+    color: #f4c20d;
+}
+
+.shop-modern-visit h2 {
+    color: white;
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.shop-modern-visit p {
+    color: #ddd;
+    line-height: 1.8;
+    max-width: 650px;
+    margin: 0 auto 30px;
+}
+
+.shop-action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* Coffee shop section */
+
+.shop-modern-coffee {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 75px 20px;
+}
+
+.shop-modern-coffee h2 {
+    color: #1e88e5;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.shop-modern-coffee p {
+    color: #555;
+    line-height: 1.8;
+    max-width: 650px;
+    margin: 0 auto 30px;
+}
+
+/* Mobile design */
+
+@media (max-width: 900px) {
+
+    .shop-feature-card {
+        grid-template-columns: 1fr;
+    }
+
+    .shop-benefits-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .shop-modern-hero h1 {
+        font-size: 35px;
+    }
+
+    .shop-modern-intro h2,
+    .shop-collection-heading h2,
+    .shop-benefits-heading h2,
+    .shop-modern-visit h2,
+    .shop-modern-coffee h2 {
+        font-size: 29px;
+    }
+
+    .shop-modern-collection,
+    .shop-modern-benefits {
+        padding: 60px 20px;
+    }
+
+    .shop-feature-content {
+        padding: 30px 22px;
+    }
+
+    .shop-feature-content h3 {
+        font-size: 25px;
+    }
+}
+
+/* =========================================
+   MODERN DARG COFFEE SHOP PAGE
+   ========================================= */
+
+/* Hero section */
+
+.coffee-modern-hero {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.coffee-label {
+    display: inline-block;
+    background-color: #292929;
+    color: #f4c20d;
+    padding: 10px 18px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.coffee-modern-hero h1 {
+    color: white;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.coffee-modern-hero h1 span {
+    color: #f4c20d;
+}
+
+.coffee-modern-hero p {
+    color: #ddd;
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+/* Section labels */
+
+.coffee-section-label {
+    display: block;
+    color: #1e88e5;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+/* Main buttons */
+
+.coffee-main-button {
+    display: inline-block;
+    background-color: #f4c20d;
+    color: #111;
+    padding: 14px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.coffee-main-button:hover {
+    background-color: #1e88e5;
+    color: white;
+}
+
+.coffee-outline-button,
+.coffee-support-outline {
+    display: inline-block;
+    border: 2px solid #1e88e5;
+    color: white;
+    padding: 12px 23px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.coffee-outline-button:hover,
+.coffee-support-outline:hover {
+    background-color: #1e88e5;
+    color: white;
+}
+
+/* Introduction */
+
+.coffee-modern-intro {
+    background-color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.coffee-modern-intro h2 {
+    color: #111;
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+.coffee-modern-intro p {
+    color: #555;
+    line-height: 1.8;
+    max-width: 750px;
+    margin: 0 auto 18px;
+}
+
+/* Coffee menu */
+
+.coffee-modern-menu {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.coffee-menu-heading {
+    margin-bottom: 35px;
+}
+
+.coffee-menu-heading h2 {
+    color: #1e88e5;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.coffee-menu-heading p {
+    color: #666;
+    line-height: 1.8;
+}
+
+.coffee-menu-card {
+    max-width: 850px;
+    margin: auto;
+    background-color: white;
+    border: 2px solid #1e88e5;
+    border-radius: 18px;
+    padding: 25px;
+    box-shadow: 0 5px 20px #00000012;
+}
+
+.coffee-menu-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.coffee-menu-note {
+    color: #666;
+    font-size: 14px;
+    margin: 20px auto 0;
+    line-height: 1.7;
+}
+
+/* Benefits */
+
+.coffee-modern-benefits {
+    background-color: white;
+    padding: 80px 7%;
+}
+
+.coffee-benefits-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.coffee-benefits-heading h2 {
+    color: #1e88e5;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.coffee-benefits-heading p {
+    color: #666;
+    line-height: 1.8;
+}
+
+.coffee-benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.coffee-benefit-card {
+    background-color: #f8f8f8;
+    border: 2px solid #1e88e5;
+    border-radius: 16px;
+    padding: 35px 25px;
+    text-align: center;
+}
+
+.coffee-benefit-card span {
+    display: block;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.coffee-benefit-card h3 {
+    color: #1e88e5;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.coffee-benefit-card p {
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Visit section */
+
+.coffee-modern-visit {
+    background-color: #171717;
+    color: white;
+    text-align: center;
+    padding: 85px 20px;
+}
+
+.coffee-modern-visit .coffee-section-label {
+    color: #f4c20d;
+}
+
+.coffee-modern-visit h2 {
+    color: white;
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.coffee-modern-visit p {
+    color: #ddd;
+    line-height: 1.8;
+    max-width: 650px;
+    margin: 0 auto 30px;
+}
+
+.coffee-action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* Support section */
+
+.coffee-modern-support {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.coffee-modern-support h2 {
+    color: #1e88e5;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.coffee-modern-support p {
+    color: #555;
+    line-height: 1.8;
+    max-width: 650px;
+    margin: 0 auto 30px;
+}
+
+/* Outline button on light background */
+
+.coffee-modern-support .coffee-support-outline {
+    color: #1e88e5;
+}
+
+.coffee-modern-support .coffee-support-outline:hover {
+    color: white;
+}
+
+/* Responsive design */
+
+@media (max-width: 900px) {
+
+    .coffee-benefits-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .coffee-modern-hero h1 {
+        font-size: 35px;
+    }
+
+    .coffee-modern-intro h2,
+    .coffee-menu-heading h2,
+    .coffee-benefits-heading h2,
+    .coffee-modern-visit h2,
+    .coffee-modern-support h2 {
+        font-size: 29px;
+    }
+
+    .coffee-modern-menu,
+    .coffee-modern-benefits {
+        padding: 60px 20px;
+    }
+
+    .coffee-menu-card {
+        padding: 12px;
+    }
+}
+
+/* =========================================
+   MODERN CONTACT PAGE
+   ========================================= */
+
+/* Hero section */
+
+.contact-modern-hero {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.contact-modern-label {
+    display: inline-block;
+    background-color: #292929;
+    color: #f4c20d;
+    padding: 10px 18px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.contact-modern-hero h1 {
+    color: white;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.contact-modern-hero h1 span {
+    color: #f4c20d;
+}
+
+.contact-modern-hero p {
+    color: #ddd;
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+/* Section labels */
+
+.contact-modern-section-label {
+    display: block;
+    color: #1e88e5;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+/* Buttons */
+
+.contact-modern-main-button {
+    display: inline-block;
+    background-color: #f4c20d;
+    color: #111;
+    padding: 14px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-modern-main-button:hover {
+    background-color: #1e88e5;
+    color: white;
+}
+
+.contact-modern-outline-button {
+    display: inline-block;
+    border: 2px solid #1e88e5;
+    color: white;
+    padding: 12px 23px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-modern-outline-button:hover {
+    background-color: #1e88e5;
+    color: white;
+}
+
+/* Introduction */
+
+.contact-modern-intro {
+    background-color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.contact-modern-intro h2 {
+    color: #111;
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+.contact-modern-intro p {
+    color: #555;
+    line-height: 1.8;
+    max-width: 750px;
+    margin: auto;
+}
+
+/* Contact section */
+
+.contact-modern-section {
+    background-color: #f8f8f8;
+    padding: 80px 7%;
+}
+
+.contact-modern-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-modern-heading h2 {
+    color: #1e88e5;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.contact-modern-heading p {
+    color: #666;
+    line-height: 1.8;
+}
+
+.contact-modern-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+    align-items: start;
+}
+
+/* Contact information card */
+
+.contact-modern-details {
+    background-color: white;
+    border: 2px solid #1e88e5;
+    border-radius: 16px;
+    padding: 35px;
+}
+
+.contact-modern-details h2 {
+    color: #1e88e5;
+    font-size: 27px;
+    margin-bottom: 30px;
+}
+
+.contact-modern-detail-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.contact-modern-detail-item > span {
+    font-size: 27px;
+    flex-shrink: 0;
+}
+
+.contact-modern-detail-item h3 {
+    color: #111;
+    font-size: 18px;
+    margin-bottom: 7px;
+}
+
+.contact-modern-detail-item p {
+    color: #555;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.contact-modern-detail-item a {
+    color: #1e88e5;
+    text-decoration: none;
+}
+
+.contact-modern-detail-item a:hover {
+    text-decoration: underline;
+}
+
+/* Contact form card */
+
+.contact-modern-form-box {
+    background-color: white;
+    border: 2px solid #1e88e5;
+    border-radius: 16px;
+    padding: 35px;
+}
+
+.contact-modern-form-box h2 {
+    color: #1e88e5;
+    font-size: 27px;
+    margin-bottom: 12px;
+}
+
+.contact-modern-form-box > p {
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.contact-modern-form-box label {
+    display: block;
+    color: #111;
+    font-weight: bold;
+    margin-bottom: 9px;
+}
+
+.contact-modern-form-box input,
+.contact-modern-form-box textarea {
+    display: block;
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 22px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
+    color: #111;
+    font-size: 15px;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+.contact-modern-form-box input:focus,
+.contact-modern-form-box textarea:focus {
+    outline: 2px solid #1e88e5;
+    border-color: #1e88e5;
+}
+
+.contact-modern-form-box button[type="submit"] {
+    display: block;
+    width: 100%;
+    background-color: #f4c20d;
+    color: #111;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-modern-form-box button[type="submit"]:hover {
+    background-color: #1e88e5;
+    color: white;
+}
+
+.contact-modern-form-note {
+    color: #666;
+    font-size: 13px;
+    line-height: 1.7;
+    text-align: center;
+    margin-top: 18px;
+}
+
+#formMessage {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* FAQ section */
+
+.contact-modern-faq {
+    background-color: white;
+    padding: 80px 20px;
+}
+
+.contact-modern-faq-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-modern-faq-heading h2 {
+    color: #1e88e5;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.contact-modern-faq-heading p {
+    color: #666;
+    line-height: 1.8;
+}
+
+.contact-modern-faq .faq-item {
+    max-width: 850px;
+    margin: 0 auto 15px;
+    border: 2px solid #1e88e5;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #f8f8f8;
+}
+
+.contact-modern-faq .faq-question {
+    display: block;
+    width: 100%;
+    background-color: #f8f8f8;
+    color: #111;
+    border: none;
+    padding: 20px;
+    text-align: left;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-modern-faq .faq-question:hover {
+    background-color: #eaf4ff;
+}
+
+.contact-modern-faq .faq-answer {
+    color: #555;
+    line-height: 1.8;
+    padding: 0 20px 20px;
+}
+
+/* Support section */
+
+.contact-modern-support {
+    background-color: #171717;
+    color: white;
+    text-align: center;
+    padding: 85px 20px;
+}
+
+.contact-modern-support .contact-modern-section-label {
+    color: #f4c20d;
+}
+
+.contact-modern-support h2 {
+    color: white;
+    font-size: 38px;
+    max-width: 750px;
+    margin: 0 auto 20px;
+}
+
+.contact-modern-support p {
+    color: #ddd;
+    line-height: 1.8;
+    max-width: 650px;
+    margin: 0 auto 30px;
+}
+
+.contact-modern-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* Responsive design */
+
+@media (max-width: 900px) {
+
+    .contact-modern-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .contact-modern-hero h1 {
+        font-size: 35px;
+    }
+
+    .contact-modern-intro h2,
+    .contact-modern-heading h2,
+    .contact-modern-faq-heading h2,
+    .contact-modern-support h2 {
+        font-size: 29px;
+    }
+
+    .contact-modern-section,
+    .contact-modern-faq {
+        padding: 60px 20px;
+    }
+
+    .contact-modern-details,
+    .contact-modern-form-box {
+        padding: 22px;
+    }
+}
+
+
+/* =========================================
+   MODERN FIND US PAGE
+   ========================================= */
+
+/* Hero section */
+
+.find-modern-hero {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.find-label {
+    display: inline-block;
+    background-color: #292929;
+    color: #f4c20d;
+    padding: 10px 18px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.find-modern-hero h1 {
+    color: white;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.find-modern-hero h1 span {
+    color: #f4c20d;
+}
+
+.find-modern-hero p {
+    color: #ddd;
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+/* Section labels */
+
+.find-section-label {
+    display: block;
+    color: #1e88e5;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+/* Main buttons */
+
+.find-main-button {
+    display: inline-block;
+    background-color: #f4c20d;
+    color: #111;
+    padding: 14px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.find-main-button:hover {
+    background-color: #1e88e5;
+    color: white;
+}
+
+.find-outline-button {
+    display: inline-block;
+    border: 2px solid #1e88e5;
+    color: white;
+    padding: 12px 23px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.find-outline-button:hover {
+    background-color: #1e88e5;
+    color: white;
+}
+
+/* Introduction */
+
+.find-modern-intro {
+    background-color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.find-modern-intro h2 {
+    color: #111;
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+.find-modern-intro p {
+    color: #555;
+    line-height: 1.8;
+    max-width: 750px;
+    margin: 0 auto 18px;
+}
+
+/* Location details */
+
+.find-modern-details {
+    background-color: #f8f8f8;
+    padding: 80px 7%;
+}
+
+.find-details-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.find-details-heading h2 {
+    color: #1e88e5;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.find-details-heading p {
+    color: #666;
+    line-height: 1.8;
+}
+
+.find-details-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.find-detail-card {
+    background-color: white;
+    border: 2px solid #1e88e5;
+    border-radius: 16px;
+    padding: 35px 25px;
+    text-align: center;
+}
+
+.find-detail-card span {
+    display: block;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.find-detail-card h3 {
+    color: #1e88e5;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.find-detail-card p {
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Map section */
+
+.find-modern-map {
+    background-color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.find-map-heading {
+    margin-bottom: 35px;
+}
+
+.find-map-heading h2 {
+    color: #1e88e5;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.find-map-heading p {
+    color: #666;
+    line-height: 1.8;
+}
+
+.find-map-container {
+    max-width: 1100px;
+    margin: 0 auto 30px;
+    border: 2px solid #1e88e5;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px #00000012;
+}
+
+.find-map-container iframe {
+    display: block;
+    width: 100%;
+    height: 450px;
+    border: none;
+}
+
+.find-map-note {
+    color: #666;
+    font-size: 14px;
+    margin-top: 18px;
+    line-height: 1.7;
+}
+
+/* Bottom support section */
+
+.find-modern-support {
+    background-color: #171717;
+    color: white;
+    text-align: center;
+    padding: 85px 20px;
+}
+
+.find-modern-support .find-section-label {
+    color: #f4c20d;
+}
+
+.find-modern-support h2 {
+    color: white;
+    font-size: 38px;
+    max-width: 750px;
+    margin: 0 auto 20px;
+}
+
+.find-modern-support p {
+    color: #ddd;
+    line-height: 1.8;
+    max-width: 650px;
+    margin: 0 auto 30px;
+}
+
+.find-action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* Responsive design */
+
+@media (max-width: 900px) {
+
+    .find-details-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .find-modern-hero h1 {
+        font-size: 35px;
+    }
+
+    .find-modern-intro h2,
+    .find-details-heading h2,
+    .find-map-heading h2,
+    .find-modern-support h2 {
+        font-size: 29px;
+    }
+
+    .find-modern-details,
+    .find-modern-map {
+        padding: 60px 20px;
+    }
+
+    .find-map-container iframe {
+        height: 350px;
+    }
+}
 
 
