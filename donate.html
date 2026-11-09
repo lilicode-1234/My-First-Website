@@ -1,113 +1,404 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-    <title>Donate</title>
 
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-<!-- Link to the CSS file -->
-    <link rel="stylesheet" href="style.css">    
+    <!-- SEO Title -->
+    <title>Donate to Animal Rescue in Hout Bay | DARG</title>
+
+    <!-- SEO Description -->
+    <meta name="description"
+          content="Support DARG animal rescue in Hout Bay. Your donation helps provide food, shelter, veterinary care and support for rescued dogs and cats.">
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
-<!--Headet-->
-
 
 <body>
 
-    <!-- Header section -->
+    <!-- HEADER -->
     <header>
-        <img src="images/LOGO.jpg" alt="DARG Logo" width="150">
 
-        
-  <!-- Navigation menu -->
+        <img src="images/LOGO.jpg"
+             alt="DARG Logo"
+             width="150">
+
+        <!-- Navigation -->
         <nav>
-    <!-- Menu button for mobile screens -->
-    <button class="menu-button" onclick="toggleMenu()">
-        ☰
-    </button>
 
-    <!-- Navigation links -->
-    <ul id="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="adopt.html">Adopt</a></li>
-        <li><a href="donate.html">Donate</a></li>
-        <li><a href="volunteer.html">Volunteer</a></li>
-        <li><a href="shop.html">Shop</a></li>
-        <li><a href="coffee-shop.html">Coffee Shop</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="find-us.html">Find Us</a></li>
-    </ul>
-</nav>
+            <button class="menu-button"
+                    onclick="toggleMenu()"
+                    aria-label="Toggle navigation menu">
+                ☰
+            </button>
+
+            <ul id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="adopt.html">Adopt</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="coffee-shop.html">Coffee Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="find-us.html">Find Us</a></li>
+            </ul>
+
+        </nav>
 
     </header>
 
-    <!-- Main content -->
+
+    <!-- MAIN CONTENT -->
     <main>
 
-        <!-- Donation introduction -->
-        <section class="donate">
-            <h1>SUPPORT DARG</h1>
+        <!-- DONATION HERO -->
+        <section class="donate-modern-hero">
+
+            <span class="donate-label">
+                 MAKE A DIFFERENCE
+            </span>
+
+            <h1>
+                Support <span>DARG</span>
+            </h1>
 
             <p>
-                Your support helps DARG care for and protect
-                animals in need. Every contribution makes a difference.
+                Your kindness can help provide
+                rescued animals with food,
+                shelter, medical care and
+                a second chance at life.
             </p>
 
-            <!-- Donation form -->
-            <div class="donation-form">
-                <form>
+            <a href="#donation-form"
+               class="donate-main-button">
+                I Want to Help
+            </a>
 
-                    <label for="donor-name">Donor Name:</label>
-                    <input type="text" id="donor-name" name="donor-name" required>
+        </section>
 
-                    <label for="donor-email">Donor Email:</label>
-                    <input type="email" id="donor-email" name="donor-email" required>
 
-                    <label for="donation-amount">Donation Amount (R):</label>
-                    <input type="number" id="donation-amount" name="donation-amount" min="1" required>
+        <!-- DONATION INTRODUCTION -->
+        <section class="donate-modern-intro">
 
-                    <label for="payment-method">Payment Method:</label>
-                    <select id="payment-method" name="payment-method" required>
-                        <option value="">Select payment method</option>
-                        <option value="card">Credit/Debit Card</option>
-                        <option value="eft">EFT</option>
+            <span class="donate-section-label">
+                WHY YOUR SUPPORT MATTERS
+            </span>
+
+            <h2>
+                Small Acts of Kindness
+                Make a Big Difference.
+            </h2>
+
+            <p>
+                At DARG, every rescued animal
+                deserves love, protection and care.
+                Donations help support the
+                organisation's animal welfare
+                work in Hout Bay.
+            </p>
+
+        </section>
+
+
+        <!-- HOW DONATIONS HELP -->
+        <section class="donate-modern-help">
+
+            <div class="donate-help-heading">
+
+                <span class="donate-section-label">
+                    YOUR IMPACT
+                </span>
+
+                <h2>How Your Donation Helps</h2>
+
+                <p>
+                    Your support contributes to
+                    the everyday needs of
+                    rescued dogs and cats.
+                </p>
+
+            </div>
+
+            <div class="donate-help-grid">
+
+                <div class="donate-help-card">
+
+                    <span></span>
+
+                    <h3>Food &amp; Nutrition</h3>
+
+                    <p>
+                        Help provide nutritious
+                        meals for rescued animals.
+                    </p>
+
+                </div>
+
+                <div class="donate-help-card">
+
+                    <span></span>
+
+                    <h3>Safe Shelter</h3>
+
+                    <p>
+                        Support a safe and caring
+                        environment for animals
+                        waiting for new homes.
+                    </p>
+
+                </div>
+
+                <div class="donate-help-card">
+
+                    <span></span>
+
+                    <h3>Veterinary Care</h3>
+
+                    <p>
+                        Help support medical
+                        treatment and animal
+                        health services.
+                    </p>
+
+                </div>
+
+                <div class="donate-help-card">
+
+                    <span></span>
+
+                    <h3>Second Chances</h3>
+
+                    <p>
+                        Support the rescue,
+                        rehabilitation and
+                        rehoming of animals.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- DONATION ENQUIRY FORM -->
+        <section class="donate-modern-form-section"
+                 id="donation-form">
+
+            <div class="donate-form-heading">
+
+                <span class="donate-section-label">
+                    SUPPORT OUR ANIMALS
+                </span>
+
+                <h2>Make a Donation Enquiry</h2>
+
+                <p>
+                    Tell us how you would like
+                    to help. This form is for
+                    donation enquiries only
+                    and does not process payments.
+                </p>
+
+            </div>
+
+            <div class="donate-form-box">
+
+                <form id="donationEnquiryForm">
+
+                    <!-- Donor name -->
+                    <label for="donor-name">
+                        Full Name
+                    </label>
+
+                    <input type="text"
+                           id="donor-name"
+                           name="donor-name"
+                           placeholder="Enter your full name"
+                           required>
+
+
+                    <!-- Donor email -->
+                    <label for="donor-email">
+                        Email Address
+                    </label>
+
+                    <input type="email"
+                           id="donor-email"
+                           name="donor-email"
+                           placeholder="Enter your email"
+                           required>
+
+
+                    <!-- Donation amount -->
+                    <label for="donation-amount">
+                        Intended Donation Amount (R)
+                    </label>
+
+                    <input type="number"
+                           id="donation-amount"
+                           name="donation-amount"
+                           min="1"
+                           step="0.01"
+                           placeholder="Enter an amount"
+                           required>
+
+
+                    <!-- Preferred donation method -->
+                    <label for="payment-method">
+                        Preferred Donation Method
+                    </label>
+
+                    <select id="payment-method"
+                            name="payment-method"
+                            required>
+
+                        <option value="">
+                            Select a method
+                        </option>
+
+                        <option value="eft">
+                            EFT / Bank Transfer
+                        </option>
+
+                        <option value="card">
+                            Card via a Secure Payment Provider
+                        </option>
+
                     </select>
 
-                    <!-- Card payment information -->
-                    <div class="card-details">
-                        <h3>Card Details</h3>
 
-                        <label for="card-name">Cardholder Name:</label>
-                        <input type="text" id="card-name" name="card-name" placeholder="Name on card">
+                    <!-- Donation message -->
+                    <label for="donation-message">
+                        Message (Optional)
+                    </label>
 
-                        <label for="card-number">Card Number:</label>
-                        <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456">
+                    <textarea id="donation-message"
+                              name="donation-message"
+                              rows="4"
+                              placeholder="Write your message here..."></textarea>
 
-                        <label for="expiry-date">Expiry Date:</label>
-                        <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY">
 
-                        <label for="cvv">CVV:</label>
-                        <input type="text" id="cvv" name="cvv" placeholder="123">
-                    </div>
+                    <!-- Enquiry button -->
+                    <button type="submit">
+                        Prepare Donation Enquiry
+                    </button>
 
-                    <label for="donation-message">Donation Message:</label>
-                    <textarea id="donation-message" name="donation-message" rows="4"></textarea>
+                    <p class="donate-form-note">
+                        No money will be charged.
+                        Please do not enter card
+                        numbers, passwords or CVV
+                        details in this form.
+                    </p>
 
-                    <button type="submit">Donate Now</button>
+                    <p id="donation-feedback"
+                       aria-live="polite"></p>
 
                 </form>
+
+            </div>
+
+        </section>
+
+
+        <!-- OTHER WAYS TO HELP -->
+        <section class="donate-modern-bottom">
+
+            <span class="donate-section-label">
+                MORE WAYS TO MAKE A DIFFERENCE
+            </span>
+
+            <h2>
+                Your Support Means Everything.
+            </h2>
+
+            <p>
+                Donations are not the only
+                way to help. You can also
+                volunteer your time or
+                give a rescued animal
+                a loving home.
+            </p>
+
+            <div class="donate-bottom-buttons">
+
+                <a href="volunteer.html"
+                   class="donate-main-button">
+                    Become a Volunteer
+                </a>
+
+                <a href="adopt.html"
+                   class="donate-outline-button">
+                    Adopt a Pet
+                </a>
+
             </div>
 
         </section>
 
     </main>
 
-    <!-- Footer section -->
+
+    <!-- FOOTER -->
     <footer>
-        <p>&copy; 2026 Domestic Animal Rescue Group. All rights reserved.</p>
+
+        <p>
+            &copy; 2026 DARG - Domestic Animal Rescue Group.
+            All rights reserved.
+        </p>
+
     </footer>
+
+
+    <!-- Existing JavaScript -->
+    <script src="js/script.js"></script>
+
+    <!-- Donation enquiry JavaScript -->
+    <script>
+
+        // Prepare a donation enquiry email
+        document.getElementById("donationEnquiryForm")
+            .addEventListener("submit", function(event) {
+
+                event.preventDefault();
+
+                var name = document.getElementById("donor-name").value;
+                var email = document.getElementById("donor-email").value;
+                var amount = document.getElementById("donation-amount").value;
+                var method = document.getElementById("payment-method").value;
+                var message = document.getElementById("donation-message").value;
+
+                var subject = "DARG Donation Enquiry";
+
+                var body =
+                    "Name: " + name + "\n" +
+                    "Email: " + email + "\n" +
+                    "Intended Amount: R" + amount + "\n" +
+                    "Preferred Method: " + method + "\n\n" +
+                    "Message: " + message;
+
+                var emailLink =
+                    "mailto:info@darg.org.za" +
+                    "?subject=" + encodeURIComponent(subject) +
+                    "&body=" + encodeURIComponent(body);
+
+                document.getElementById("donation-feedback")
+                    .textContent =
+                    "Your email app should open with your enquiry. " +
+                    "Please send the email to complete your enquiry.";
+
+                window.location.href = emailLink;
+
+            });
+
+    </script>
 
 </body>
 </html>
