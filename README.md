@@ -149,7 +149,8 @@ The main activities completed in Part 2 include:
 
 
 # Github Link:
-https://github.com/lilicode-1234/My-First-Website/blob/main/README.md
+https://github.com/lilicode-1234/My-First-Website/edit/main/README.md
+
 
   
  
