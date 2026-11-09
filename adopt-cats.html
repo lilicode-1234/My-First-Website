@@ -1,119 +1,175 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!--Title-->
-    <title>Adopt A Cat </title>
 
-<!-- Link to the CSS file -->
-    <link rel="stylesheet" href="style.css">    
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Title -->
+    <title>Rescue Cats for Adoption in Hout Bay | DARG</title>
+
+    <!-- SEO Description -->
+    <meta name="description"
+          content="Explore rescued cats at DARG in Hout Bay. View cat profiles, discover their personalities and find your next feline companion.">
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
 
-    <!-- Website header -->
+    <!-- HEADER -->
     <header>
 
-        <!-- Website logo -->
-        <img src="images/LOGO.jpg" alt="DARG Logo" width="150">
+        <!-- DARG Logo -->
+        <img src="images/LOGO.jpg"
+             alt="DARG Logo"
+             width="150">
 
-        
-  <!-- Navigation menu -->
+        <!-- Navigation Menu -->
         <nav>
-    <!-- Menu button for mobile screens -->
-    <button class="menu-button" onclick="toggleMenu()">
-        ☰
-    </button>
 
-    <!-- Navigation links -->
-    <ul id="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="adopt.html">Adopt</a></li>
-        <li><a href="donate.html">Donate</a></li>
-        <li><a href="volunteer.html">Volunteer</a></li>
-        <li><a href="shop.html">Shop</a></li>
-        <li><a href="coffee-shop.html">Coffee Shop</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="find-us.html">Find Us</a></li>
-    </ul>
-</nav>
+            <button class="menu-button"
+                    onclick="toggleMenu()"
+                    aria-label="Toggle navigation menu">
+                ☰
+            </button>
 
+            <ul id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="adopt.html">Adopt</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="coffee-shop.html">Coffee Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="find-us.html">Find Us</a></li>
+            </ul>
+
+        </nav>
 
     </header>
 
-    <!-- Main content -->
+
+    <!-- MAIN CONTENT -->
     <main>
 
-        <!-- Cat adoption introduction -->
-        <section class="cat-intro">
+        <!-- CAT ADOPTION HERO -->
+        <section class="cats-modern-hero">
 
-            <h1>Adopt a Cat</h1>
+            <span class="cats-label">
+                 FIND YOUR FELINE FRIEND
+            </span>
+
+            <h1>
+                Meet Our <span>Rescue Cats</span>
+            </h1>
 
             <p>
-                Give a rescued cat a loving home.
-                Explore the cats currently looking for
-                a family at DARG.
+                Every cat deserves a safe and loving home.
+                Meet the rescued cats at DARG in Hout Bay
+                and discover your new companion.
+            </p>
+
+            <a href="adopt.html"
+               class="cats-back-button">
+                ← Back to All Animals
+            </a>
+
+        </section>
+
+
+        <!-- INTRODUCTION -->
+        <section class="cats-modern-intro">
+
+            <span class="cats-section-label">
+                ADOPT A RESCUE CAT
+            </span>
+
+            <h2>
+                Your New Best Friend
+                Could Be Waiting Here.
+            </h2>
+
+            <p>
+                Our rescued cats have their own
+                unique personalities.
+                Some are playful and adventurous,
+                while others love quiet spaces
+                and gentle cuddles.
+            </p>
+
+            <p>
+                Explore their profiles and
+                find a feline friend who could
+                become part of your family.
             </p>
 
         </section>
 
-        <!-- Cat adoption cards -->
-        <section class="cat-gallery">
 
-            <h2>Meet Our Cats</h2>
+        <!-- CAT GALLERY -->
+        <section class="cat-gallery cats-modern-gallery">
 
-            <div class="cat-container">
+            <div class="cats-gallery-heading">
 
-                <div class="cat-card">
-                    <h3>Missy</h3>
-                    <img src="images/Missy.jpg" alt="Missy the cat">
-                    <p>Missy is a sweet and loving cat looking for a safe and caring forever home. She is waiting for a family who will give her the love, attention and care she deserves.</p>
-                </div>
+                <span class="cats-section-label">
+                    CATS LOOKING FOR HOMES
+                </span>
 
-                <div class="cat-card">
-                    <h3>Luna</h3>
-                    <img src="images/Luna.jpg" alt="Luna the cat">
-                    <p>Luna is a playful and affectionate cat who loves to cuddle and play. She is looking for a home where she can be the centre of attention.</p>
-                </div>
+                <h2>Meet Our Cats</h2>
 
-                <div class="cat-card">
-                    <h3>Oliver</h3>
-                    <img src="images/Oliver.jpg" alt="Oliver the cat">
-                    <p>Oliver is a gentle and friendly cat who enjoys quiet moments and affectionate pets. He is looking for a calm and loving home where he can thrive.</p>
-                </div>
+                <p>
+                    Browse the cats below and
+                    learn more about their personalities.
+                </p>
 
-                <div class="cat-card">
-                    <h3>Loki</h3>
-                    <img src="images/Loki.jpg" alt="Loki the cat">
-                    <p>Loki is a curious and energetic cat who loves to explore and play. He is looking for a home where he can have fun and receive lots of attention.</p>
-                </div>
+            </div>
 
-                <div class="cat-card">
-                    <h3>Jasper</h3>
-                    <img src="images/Jasper.jpg" alt="Jasper the cat">
-                    <p>Jasper is a shy and gentle cat who needs a patient and understanding family. He is looking for a home where he can feel safe and loved.</p>
-                </div>
+            <!-- JavaScript displays cat cards here -->
+            <div id="cat-container"
+                 class="cat-container">
+            </div>
 
-                <div class="cat-card">
-                    <h3>Daisy</h3>
-                    <img src="images/Daisy.jpg" alt="Daisy the cat">
-                    <p>Daisy is a friendly and social cat who loves interacting with people and other animals. She is looking for a home where she will receive lots of love.</p>
-                </div>
+        </section>
 
-                <div class="cat-card">
-                    <h3>Pumpkin</h3>
-                    <img src="images/Pumpkin.jpg" alt="Pumpkin the cat">
-                    <p>Pumpkin loves sleeping in sunny spots and enjoying the warmth of the sun. She is looking for someone who can take naps with her.</p>
-                </div>
 
-                <div class="cat-card">
-                    <h3>Cleo</h3>
-                    <img src="images/Cleo.jpg" alt="Cleo the cat">
-                    <p>Cleo is a playful cat who loves having fun and receiving lots of love.</p>
-                </div>
+        <!-- ADOPTION INFORMATION -->
+        <section class="cats-adoption-info">
+
+            <span class="cats-section-label">
+                READY TO ADOPT?
+            </span>
+
+            <h2>
+                Give a Rescue Cat
+                a Second Chance.
+            </h2>
+
+            <p>
+                Adopting a cat is a wonderful
+                commitment. If you are interested
+                in giving a rescue cat a loving
+                home, contact DARG to learn
+                more about the adoption process.
+            </p>
+
+            <div class="cats-action-buttons">
+
+                <a href="contact.html"
+                   class="cats-main-button">
+                    Contact DARG
+                </a>
+
+                <a href="adopt-dogs.html"
+                   class="cats-outline-button">
+                    Meet Our Dogs
+                </a>
 
             </div>
 
@@ -121,13 +177,50 @@
 
     </main>
 
-    <!-- Website footer -->
+
+    <!-- ANIMAL LIGHTBOX -->
+    <!-- Keep these IDs for JavaScript -->
+    <div id="animal-lightbox" class="animal-lightbox">
+
+        <div class="lightbox-content">
+
+            <!-- Close popup button -->
+            <button class="close-lightbox"
+                    type="button"
+                    onclick="closeLightbox()"
+                    aria-label="Close animal picture">
+                &times;
+            </button>
+
+            <!-- Large cat picture -->
+            <img id="lightbox-image"
+                 src=""
+                 alt="Selected rescue cat">
+
+            <!-- Cat name -->
+            <h2 id="lightbox-name"></h2>
+
+            <!-- Cat description -->
+            <p id="lightbox-description"></p>
+
+        </div>
+
+    </div>
+
+
+    <!-- FOOTER -->
     <footer>
+
         <p>
             &copy; 2026 DARG - Domestic Animal Rescue Group.
             All rights reserved.
         </p>
+
     </footer>
+
+
+    <!-- Existing JavaScript -->
+    <script src="js/script.js"></script>
 
 </body>
 </html>
