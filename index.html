@@ -1,138 +1,496 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Domestic Animal Rescue Group</title>
 
-<!-- Link to the CSS file -->
-    <link rel="stylesheet" href="style.css">    
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Title -->
+    <title>DARG | Animal Rescue and Adoption in Hout Bay</title>
+
+    <!-- SEO Meta Description -->
+    <meta name="description"
+          content="Discover DARG, an animal rescue organisation in Hout Bay. Adopt rescued dogs and cats, volunteer or donate to support animal welfare.">
+
+    <!-- Local SEO Structured Data -->
+    <!-- Use your own published URL when deploying your project -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "AnimalShelter",
+        "name": "Domestic Animal Rescue Group",
+        "alternateName": "DARG",
+        "description": "Animal rescue organisation caring for and rehoming rescued dogs and cats in Hout Bay.",
+        "telephone": "+27217900383",
+        "email": "info@darg.org.za",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Main Road",
+            "addressLocality": "Hout Bay",
+            "addressRegion": "Western Cape",
+            "addressCountry": "ZA"
+        },
+        "areaServed": {
+            "@type": "Place",
+            "name": "Hout Bay"
+        }
+    }
+    </script>
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
-    <!-- Header section -->
+    <!-- HEADER -->
     <header>
-        <!-- Website logo -->
-        <img src="images/LOGO.jpg" alt="DARG Logo" width="150">
 
-        <!-- Navigation menu -->
+        <!-- DARG Logo -->
+        <img src="images/LOGO.jpg"
+             alt="DARG Animal Rescue Logo"
+             width="150">
+
+        <!-- Navigation -->
         <nav>
-    <!-- Menu button for mobile screens -->
-    <button class="menu-button" onclick="toggleMenu()">
-        ☰
-    </button>
 
-    <!-- Navigation links -->
-    <ul id="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="adopt.html">Adopt</a></li>
-        <li><a href="donate.html">Donate</a></li>
-        <li><a href="volunteer.html">Volunteer</a></li>
-        <li><a href="shop.html">Shop</a></li>
-        <li><a href="coffee-shop.html">Coffee Shop</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="find-us.html">Find Us</a></li>
-    </ul>
-</nav>
+            <!-- Mobile Menu Button -->
+            <button class="menu-button"
+                    onclick="toggleMenu()"
+                    aria-label="Toggle navigation menu">
+                ☰
+            </button>
+
+            <!-- Navigation Links -->
+            <ul id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="adopt.html">Adopt</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="coffee-shop.html">Coffee Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="find-us.html">Find Us</a></li>
+            </ul>
+
+        </nav>
+
     </header>
 
-    <!-- Main content of the homepage -->
+
+    <!-- MAIN CONTENT -->
     <main>
 
-        <!-- Hero section -->
-        <section class="hero">
-            <div class="hero-text">
-                <h1>Welcome to DARG</h1>
+        <!-- HERO SECTION -->
+        <section class="modern-hero">
+
+            <div class="modern-hero-text">
+
+                <span class="hero-label">
+                    ANIMAL RESCUE IN HOUT BAY
+                </span>
+
+                <h1>
+                    Every Animal Deserves
+                    <span>A Loving Home.</span>
+                </h1>
 
                 <h2>Giving Animals a Second Chance</h2>
 
                 <p>
-                    Domestic Animal Rescue Group (DARG) is an animal
-                    rescue organisation dedicated to caring for and
-                    finding loving homes for abandoned and neglected animals.
+                    Welcome to Domestic Animal Rescue Group
+                    (DARG), an animal rescue organisation
+                    based in Hout Bay.
+
+                    We rescue, care for and help rehome
+                    abandoned and neglected dogs and cats.
+
+                    Together, we can give more animals
+                    the happy endings they deserve.
                 </p>
 
-                <a href="adopt.html" class="hero-button">Find Your New Best Friend</a>
+                <!-- Hero Buttons -->
+                <div class="hero-buttons">
+
+                    <a href="adopt.html"
+                       class="modern-btn primary-btn">
+                        Adopt a Pet
+                    </a>
+
+                    <a href="donate.html"
+                       class="modern-btn outline-btn">
+                        Support DARG
+                    </a>
+
+                </div>
+
             </div>
 
-            <!-- Main homepage image -->
-            <div class="hero-image">
-                <img src="images/hero.jpg" alt="Rescued dogs and cats at DARG">
+            <!-- Hero Image -->
+            <div class="modern-hero-image">
+
+                <img src="images/hero.jpg"
+                     alt="Rescued dogs and cats at DARG animal rescue in Hout Bay">
+
+                <div class="hero-image-label">
+                    Rescue. Love. Rehome.
+                </div>
+
             </div>
+
         </section>
 
-        <!-- How you can help section -->
-        <section class="help-section">
-            <h2>How You Can Help</h2>
+
+        <!-- WELCOME SECTION -->
+        <section class="modern-intro">
+
+            <span class="section-label">
+                WELCOME TO DARG
+            </span>
+
+            <h2>
+                Small Acts of Kindness.
+                <span>Big Changes for Animals.</span>
+            </h2>
 
             <p>
-                There are many ways you can make a difference
-                in the lives of animals at DARG.
+                Every animal deserves to feel safe,
+                loved and cared for.
+
+                At DARG, we are dedicated to helping
+                rescued animals find loving homes
+                and brighter futures.
+
+                With the support of our community,
+                we can make a difference in the lives
+                of dogs and cats in need.
             </p>
 
-            <div class="help-container">
+            <a href="about.html" class="text-link">
+                Learn More About DARG →
+            </a>
 
-                <div class="help-card">
-                    <h3>Adopt a Cat</h3>
-                    <p>Give a rescued cat a safe and loving home.</p>
-                    <a href="adopt-cats.html">View Cats</a>
+        </section>
+
+
+        <!-- ADOPTION SECTION -->
+        <section class="modern-adoption">
+
+            <div class="modern-section-heading">
+
+                <span class="section-label">
+                    FIND YOUR NEW BEST FRIEND
+                </span>
+
+                <h2>Meet Your Future Companion</h2>
+
+                <p>
+                    Looking for a new furry friend?
+                    Explore our rescue dogs and cats
+                    waiting for loving homes.
+                </p>
+
+            </div>
+
+            <div class="modern-adoption-grid">
+
+                <!-- DOG CARD -->
+                <div class="modern-adoption-card">
+
+                    <img src="images/Willow.jpg"
+                         alt="Willow, a rescued dog at DARG"
+                         loading="lazy">
+
+                    <div class="adoption-card-content">
+
+                        <span class="animal-label">
+                            DOG ADOPTION
+                        </span>
+
+                        <h3>Meet Our Dogs</h3>
+
+                        <p>
+                            Meet friendly, loyal and loving
+                            rescue dogs looking for their
+                            forever families.
+                        </p>
+
+                        <a href="adopt-dogs.html">
+                            View Dogs for Adoption →
+                        </a>
+
+                    </div>
+
                 </div>
 
-                <div class="help-card">
-                    <h3>Adopt a Dog</h3>
-                    <p>Find a loyal companion and give a dog a second chance.</p>
-                    <a href="adopt-dogs.html">View Dogs</a>
+
+                <!-- CAT CARD -->
+                <div class="modern-adoption-card">
+
+                    <img src="images/Missy.jpg"
+                         alt="Missy, a rescued cat at DARG"
+                         loading="lazy">
+
+                    <div class="adoption-card-content">
+
+                        <span class="animal-label">
+                            CAT ADOPTION
+                        </span>
+
+                        <h3>Meet Our Cats</h3>
+
+                        <p>
+                            Discover adorable rescued cats
+                            ready to bring love and happiness
+                            into your home.
+                        </p>
+
+                        <a href="adopt-cats.html">
+                            View Cats for Adoption →
+                        </a>
+
+                    </div>
+
                 </div>
 
-                <div class="help-card">
+            </div>
+
+            <div class="adoption-bottom-link">
+
+                <a href="adopt.html"
+                   class="modern-btn primary-btn">
+                    View All Animals
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- OUR MISSION -->
+        <section class="modern-mission">
+
+            <div class="mission-content">
+
+                <span class="section-label">
+                    OUR MISSION
+                </span>
+
+                <h2>
+                    Every Rescue Story
+                    Deserves a Happy Ending.
+                </h2>
+
+                <p>
+                    Domestic Animal Rescue Group is
+                    committed to caring for abandoned,
+                    neglected and rescued animals.
+                </p>
+
+                <p>
+                    We believe that through compassion,
+                    adoption and community support,
+                    more animals can receive the care
+                    and love they deserve.
+                </p>
+
+                <a href="about.html"
+                   class="modern-btn primary-btn">
+                    Discover Our Story
+                </a>
+
+            </div>
+
+            <div class="mission-decoration">
+
+                <span></span>
+
+                <h3>Rescue</h3>
+                <h3>Care</h3>
+                <h3>Love</h3>
+                <h3>Rehome</h3>
+
+            </div>
+
+        </section>
+
+
+        <!-- HOW YOU CAN HELP -->
+        <section class="modern-help">
+
+            <div class="modern-section-heading">
+
+                <span class="section-label">
+                    MAKE A DIFFERENCE
+                </span>
+
+                <h2>Be Part of Their Happy Ending</h2>
+
+                <p>
+                    There are many ways to make a
+                    positive difference in the lives
+                    of rescued animals at DARG.
+                </p>
+
+            </div>
+
+            <div class="modern-help-grid">
+
+                <!-- ADOPT -->
+                <div class="modern-help-card">
+
+                    <div class="help-icon"></div>
+
+                    <h3>Adopt</h3>
+
+                    <p>
+                        Give a rescued dog or cat
+                        a safe and loving home.
+                    </p>
+
+                    <a href="adopt.html">
+                        Adopt a Rescue Pet →
+                    </a>
+
+                </div>
+
+
+                <!-- DONATE -->
+                <div class="modern-help-card">
+
+                    <div class="help-icon"></div>
+
                     <h3>Donate</h3>
-                    <p>Help provide food, shelter and medical care.</p>
-                    <a href="donate.html">Donate Now</a>
+
+                    <p>
+                        Help provide food, shelter,
+                        medical care and comfort.
+                    </p>
+
+                    <a href="donate.html">
+                        Support Our Animals →
+                    </a>
+
                 </div>
 
-                <div class="help-card">
+
+                <!-- VOLUNTEER -->
+                <div class="modern-help-card">
+
+                    <div class="help-icon"></div>
+
                     <h3>Volunteer</h3>
-                    <p>Give your time and help care for rescued animals.</p>
-                    <a href="volunteer.html">Join Our Team</a>
+
+                    <p>
+                        Share your time and skills
+                        to help animals in need.
+                    </p>
+
+                    <a href="volunteer.html">
+                        Become a Volunteer →
+                    </a>
+
                 </div>
 
             </div>
+
         </section>
 
-        <!-- Support DARG section -->
-        <section class="support-section">
-            <h2>Support DARG</h2>
+
+        <!-- DONATION SECTION -->
+        <section class="modern-donation">
+
+            <span class="section-label">
+                YOUR KINDNESS MATTERS
+            </span>
+
+            <h2>
+                Be the Reason an Animal
+                Gets a Second Chance.
+            </h2>
 
             <p>
-                Your donation helps us provide food, shelter,
-                medical care and love to animals in need.
+                Your donations help DARG provide
+                food, shelter, medical care and love
+                to rescued animals in need.
             </p>
 
-            <a href="donate.html">Support Our Animals</a>
+            <a href="donate.html"
+               class="modern-btn primary-btn">
+                Donate to DARG
+            </a>
+
         </section>
 
-        <!-- Volunteer section -->
-        <section class="volunteer-section">
-            <h2>Become a Volunteer</h2>
 
-            <p>
-                Give your time and skills to help animals in need.
-                Join our team and make a difference in the lives
-                of rescued cats and dogs.
-            </p>
+        <!-- LOCAL SEO AND LOCATION SECTION -->
+        <section class="modern-location">
 
-            <a href="volunteer.html">Volunteer With Us</a>
+            <div class="location-content">
+
+                <span class="section-label">
+                    VISIT DARG
+                </span>
+
+                <h2>
+                    Animal Rescue and Pet Adoption
+                    in Hout Bay
+                </h2>
+
+                <p>
+                    Domestic Animal Rescue Group (DARG)
+                    is an animal rescue organisation
+                    based in Hout Bay, Western Cape,
+                    South Africa.
+                </p>
+
+                <p>
+                    Whether you are interested in
+                    adopting a rescue dog or cat,
+                    volunteering or supporting
+                    animal welfare, you can get
+                    involved with DARG.
+                </p>
+
+                <p>
+                    Contact us before visiting to
+                    confirm visiting arrangements.
+                </p>
+
+                <a href="find-us.html"
+                   class="modern-btn primary-btn">
+                    Find DARG in Hout Bay
+                </a>
+
+            </div>
+
+            <div class="location-symbol">
+                
+            </div>
+
         </section>
 
     </main>
 
-    <!-- Footer section -->
+
+    <!-- FOOTER -->
     <footer>
-        <p>&copy; 2026 Domestic Animal Rescue Group. All rights reserved.</p>
+
+        <p>
+            &copy; 2026 Domestic Animal Rescue Group.
+            All rights reserved.
+        </p>
+
     </footer>
+
+
+    <!-- Existing JavaScript -->
+    <script src="js/script.js"></script>
 
 </body>
 </html>
