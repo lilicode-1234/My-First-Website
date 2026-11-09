@@ -1,97 +1,403 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Volunteer</title>
 
-<!-- Link to the CSS file -->
-    <link rel="stylesheet" href="style.css">    
-    
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Title -->
+    <title>Animal Shelter Volunteering in Hout Bay | DARG</title>
+
+    <!-- SEO Description -->
+    <meta name="description"
+          content="Interested in volunteering at an animal shelter in Hout Bay? Discover how to support DARG and make a difference in the lives of rescued animals.">
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-    <!-- Header section -->
+    <!-- HEADER -->
     <header>
-        <img src="images/LOGO.jpg" alt="DARG Logo" width="150">
-  <!-- Navigation menu -->
-        <nav>
-    <!-- Menu button for mobile screens -->
-    <button class="menu-button" onclick="toggleMenu()">
-        ☰
-    </button>
 
-    <!-- Navigation links -->
-    <ul id="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="adopt.html">Adopt</a></li>
-        <li><a href="donate.html">Donate</a></li>
-        <li><a href="volunteer.html">Volunteer</a></li>
-        <li><a href="shop.html">Shop</a></li>
-        <li><a href="coffee-shop.html">Coffee Shop</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="find-us.html">Find Us</a></li>
-    </ul>
-</nav>
+        <img src="images/LOGO.jpg"
+             alt="DARG Logo"
+             width="150">
+
+        <!-- Navigation Menu -->
+        <nav>
+
+            <button class="menu-button"
+                    onclick="toggleMenu()"
+                    aria-label="Toggle navigation menu">
+                ☰
+            </button>
+
+            <ul id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="adopt.html">Adopt</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="coffee-shop.html">Coffee Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="find-us.html">Find Us</a></li>
+            </ul>
+
+        </nav>
+
     </header>
 
-    <!-- Main content -->
+
+    <!-- MAIN CONTENT -->
     <main>
 
-        <!-- Volunteer introduction -->
-        <div class="volunteer-intro">
-            <h1>Volunteer With DARG</h1>
+        <!-- VOLUNTEER HERO -->
+        <section class="volunteer-modern-hero">
+
+            <span class="volunteer-label">
+                 GIVE YOUR TIME, SHARE YOUR LOVE
+            </span>
+
+            <h1>
+                Volunteer <span>With DARG</span>
+            </h1>
 
             <p>
-                Your time and support can make a meaningful difference
-                in the lives of rescued animals. Join DARG as a volunteer
-                and help us provide care, love and support to animals in need.
+                Make a meaningful difference
+                in the lives of rescued animals.
+                Your time, kindness and support
+                can help give them a brighter future.
             </p>
-        </div>
 
-        <!-- Why volunteer section -->
-        <section class="why-volunteer">
-            <h2>Why Should You Volunteer?</h2>
+            <a href="#volunteer-application"
+               class="volunteer-main-button">
+                Become a Volunteer
+            </a>
 
-            <p>
-                Help provide rescued animals with the care, attention
-                and companionship they need while they wait for
-                their forever homes.
-            </p>
         </section>
 
-        <!-- Volunteer application form -->
-        <section class="volunteer-form">
-            <h2>Become a Volunteer</h2>
 
-            <form action="submit_volunteer_form.php" method="post">
+        <!-- INTRODUCTION -->
+        <section class="volunteer-modern-intro">
 
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+            <span class="volunteer-section-label">
+                JOIN OUR MISSION
+            </span>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+            <h2>
+                Be Part of Something
+                Truly Meaningful.
+            </h2>
 
-                <label for="phone">Phone:</label>
-                <input type="tel" id="phone" name="phone">
+            <p>
+                Volunteering is a wonderful
+                way to support rescued animals
+                while making a positive
+                difference in your community.
+            </p>
 
-                <label for="availability">Availability:</label>
-                <textarea id="availability" name="availability" rows="4"></textarea>
+            <p>
+                By volunteering with DARG,
+                you can help provide care,
+                love and companionship to
+                animals waiting for their
+                forever homes.
+            </p>
 
-                <input type="submit" value="Submit">
+        </section>
 
-            </form>
+
+        <!-- WHY VOLUNTEER -->
+        <section class="volunteer-modern-benefits">
+
+            <div class="volunteer-benefits-heading">
+
+                <span class="volunteer-section-label">
+                    WHY VOLUNTEER?
+                </span>
+
+                <h2>Every Helping Hand Matters</h2>
+
+                <p>
+                    Your support can make a
+                    positive difference to
+                    rescued animals and
+                    the people who care for them.
+                </p>
+
+            </div>
+
+            <div class="volunteer-benefits-grid">
+
+                <!-- BENEFIT 1 -->
+                <div class="volunteer-benefit-card">
+
+                    <span></span>
+
+                    <h3>Help Rescue Animals</h3>
+
+                    <p>
+                        Support the care and
+                        well-being of dogs
+                        and cats waiting for
+                        loving homes.
+                    </p>
+
+                </div>
+
+
+                <!-- BENEFIT 2 -->
+                <div class="volunteer-benefit-card">
+
+                    <span></span>
+
+                    <h3>Share Love &amp; Care</h3>
+
+                    <p>
+                        Help give rescued
+                        animals the attention,
+                        kindness and
+                        companionship they need.
+                    </p>
+
+                </div>
+
+
+                <!-- BENEFIT 3 -->
+                <div class="volunteer-benefit-card">
+
+                    <span></span>
+
+                    <h3>Support Your Community</h3>
+
+                    <p>
+                        Contribute to animal
+                        welfare efforts and
+                        help promote responsible
+                        pet ownership.
+                    </p>
+
+                </div>
+
+
+                <!-- BENEFIT 4 -->
+                <div class="volunteer-benefit-card">
+
+                    <span></span>
+
+                    <h3>Make a Difference</h3>
+
+                    <p>
+                        Be part of a caring
+                        community working
+                        towards a better
+                        future for animals.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- VOLUNTEER APPLICATION -->
+        <section class="volunteer-modern-form-section"
+                 id="volunteer-application">
+
+            <div class="volunteer-form-heading">
+
+                <span class="volunteer-section-label">
+                    GET INVOLVED
+                </span>
+
+                <h2>Become a Volunteer</h2>
+
+                <p>
+                    Interested in volunteering?
+                    Complete the form below to
+                    prepare an enquiry to DARG.
+                </p>
+
+            </div>
+
+
+            <div class="volunteer-form-box">
+
+                <form id="volunteerEnquiryForm">
+
+                    <!-- Full Name -->
+                    <label for="name">
+                        Full Name
+                    </label>
+
+                    <input type="text"
+                           id="name"
+                           name="name"
+                           placeholder="Enter your full name"
+                           required>
+
+
+                    <!-- Email -->
+                    <label for="email">
+                        Email Address
+                    </label>
+
+                    <input type="email"
+                           id="email"
+                           name="email"
+                           placeholder="Enter your email"
+                           required>
+
+
+                    <!-- Phone Number -->
+                    <label for="phone">
+                        Phone Number (Optional)
+                    </label>
+
+                    <input type="tel"
+                           id="phone"
+                           name="phone"
+                           placeholder="Enter your phone number">
+
+
+                    <!-- Availability -->
+                    <label for="availability">
+                        Your Availability
+                    </label>
+
+                    <textarea id="availability"
+                              name="availability"
+                              rows="4"
+                              placeholder="Tell us which days and times you are available..."
+                              required></textarea>
+
+
+                    <!-- Submit Button -->
+                    <button type="submit">
+                        Prepare Volunteer Enquiry
+                    </button>
+
+                    <p class="volunteer-form-note">
+                        This form prepares an email
+                        enquiry. It does not
+                        automatically submit
+                        an application.
+                    </p>
+
+                    <p id="volunteer-feedback"
+                       aria-live="polite"></p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+        <!-- OTHER WAYS TO HELP -->
+        <section class="volunteer-modern-bottom">
+
+            <span class="volunteer-section-label">
+                EVERY ACT OF KINDNESS COUNTS
+            </span>
+
+            <h2>
+                There Are More Ways to Help.
+            </h2>
+
+            <p>
+                Can't volunteer right now?
+                You can still support DARG
+                by adopting a rescued animal
+                or making a donation.
+            </p>
+
+            <div class="volunteer-bottom-buttons">
+
+                <a href="adopt.html"
+                   class="volunteer-main-button">
+                    Adopt a Pet
+                </a>
+
+                <a href="donate.html"
+                   class="volunteer-outline-button">
+                    Make a Donation
+                </a>
+
+            </div>
+
         </section>
 
     </main>
 
-    <!-- Footer section -->
+
+    <!-- FOOTER -->
     <footer>
-        <p>&copy; 2026 DARG - Domestic Animal Rescue Group. All rights reserved.</p>
+
+        <p>
+            &copy; 2026 DARG - Domestic Animal Rescue Group.
+            All rights reserved.
+        </p>
+
     </footer>
+
+
+    <!-- Existing JavaScript -->
+    <script src="js/script.js"></script>
+
+
+    <!-- Volunteer Form JavaScript -->
+    <script>
+
+        // Prepare a volunteer enquiry email
+        document.getElementById("volunteerEnquiryForm")
+            .addEventListener("submit", function(event) {
+
+                // Stop the page from refreshing
+                event.preventDefault();
+
+                // Get the information entered
+                var name = document.getElementById("name").value;
+                var email = document.getElementById("email").value;
+                var phone = document.getElementById("phone").value;
+                var availability = document.getElementById("availability").value;
+
+                // Email subject
+                var subject = "DARG Volunteer Enquiry";
+
+                // Email message
+                var body =
+                    "Name: " + name + "\n" +
+                    "Email: " + email + "\n" +
+                    "Phone: " + phone + "\n\n" +
+                    "Availability:\n" + availability;
+
+                // Create the email link
+                var emailLink =
+                    "mailto:info@darg.org.za" +
+                    "?subject=" + encodeURIComponent(subject) +
+                    "&body=" + encodeURIComponent(body);
+
+                // Show a message on the page
+                document.getElementById("volunteer-feedback")
+                    .textContent =
+                    "Your email app should open with your enquiry. " +
+                    "Please send the email to complete your request.";
+
+                // Open the email application
+                window.location.href = emailLink;
+
+            });
+
+    </script>
 
 </body>
 </html>
